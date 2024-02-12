@@ -1,6 +1,11 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import reactIcon from "../assets/img/React-icon.png";
+import csharp from "../assets/img/csharp-icon.png";
+import unity from "../assets/img/unity-icon.png";
+import gamedesign from "../assets/img/game-design.png"
+import uiux from "../assets/img/uiuxicon.png"
+import word from "../assets/img/word-icon.png"
+import excel from "../assets/img/excel-icon.png"
+import powerpoint from "../assets/img/powerpoint-icon.png"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -34,24 +39,45 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>About Skills</h2>
+                        <h2>Skills</h2>
                         <p>I have learned different programming languages ​​so far and as far as my skills are concerned<br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+
+                           <div className="item">
+                                <img src={reactIcon} alt="Image" />
+                                <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>English</h5>
+                                <img src={unity} alt="Image" />
+                                <h5>Unity Game Engine</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <img src={csharp} alt="Image" />
+                                <h5>C#</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={reactIcon} alt="Image" />
+                                <h5>React Native</h5>
+                            </div>
+                            <div className="item">
+                                <img src={gamedesign} alt="Image" />
+                                <h5>Game Design</h5>
+                            </div>
+                            <div className="item">
+                                <img src={uiux} alt="Image" />
+                                <h5>UI/UX Design</h5>
+                            </div>
+                            <div className="item">
+                                <img src={word} alt="Image" />
+                                <h5>Word Certified</h5>
+                            </div>
+                            <div className="item">
+                                <img src={excel} alt="Image" />
+                                <h5>Excel Certified</h5>
+                            </div>
+                            <div className="item">
+                                <img src={powerpoint} alt="Image" />
+                                <h5>PowerPoint Certified</h5>
                             </div>
                         </Carousel>
                     </div>
