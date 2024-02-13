@@ -1,24 +1,24 @@
 import logo from './logo.svg';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
-import { Skills } from "./components/Skills";
-import { Projects } from "./components/Projects";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
+import { MainPage } from "./components/MainPage";
+import {
+  BrowserRouter, Route, Routes,
+} from "react-router-dom";
+import * as React from "react";
+import { ProjectCard } from './components/ProjectCard';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Banner />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<MainPage/>} /> {/* 👈 Renders at /app/ */}
+          <Route path="project" exact element={<ProjectCard/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
+
   );
 }
 
-export default App;

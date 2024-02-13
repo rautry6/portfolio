@@ -64,11 +64,10 @@ export const Banner = () => {
                 <p>My fullname is Johnathon Reid Autry. I'm 21 years old. I graduated from Kennesaw State University with a Bachelors of Science in Computer Game Design and Development
                    with a double minor in Computer Science and Software Engineering. I am a front-end developer and Game Developer and Designer. 
         </p>
-        <Router>
+
           <HashLink to='#connect'>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
           </HashLink>
-          </Router>
               </div>}
             </TrackVisibility>
           </Col>
