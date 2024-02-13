@@ -4,6 +4,7 @@ import logo from '../assets/img/odina2.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github_icon1.png';
 import navIcon3 from '../assets/img/itch-io-icon.png';
+import { NavLink } from "react-router-dom";
 
 export const ProjectNavbar = () => {
 
@@ -36,6 +37,7 @@ export const ProjectNavbar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
+              <Nav.Link href="/" className={activeLink === 'description' ? 'active navbar-link' : 'navbar-link'} >Home</Nav.Link>
               <Nav.Link href="#description" className={activeLink === 'description' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('description')}>Description</Nav.Link>
               <Nav.Link href="#images" className={activeLink === 'images' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('images')}>Images</Nav.Link>
             </Nav>
