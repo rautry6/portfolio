@@ -10,6 +10,7 @@ export const ProjectCard = ({ title, projDescription, projTagline, imgUrl, image
       description: projDescription, 
       tagline: projTagline,
       images:imageList,
+      imageUrl: imgUrl,
 
     }}>
       <div className="proj-imgbx">

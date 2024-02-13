@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./NavBar";
 import { ProjectNavbar } from "./ProjectNavbar";
 import { ProjectBanner } from "./ProjectBanner";
+import { ProjectImages } from './ProjectImages';
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
@@ -17,9 +18,7 @@ export const ProjectPage = () => {
     <div className="App">
       <ProjectNavbar />
       <ProjectBanner project={location.state}/>
-      <Skills />
-      <Projects />
-      <Contact />
+      <ProjectImages project={location.state} />
       <Footer />
     </div>
   );
