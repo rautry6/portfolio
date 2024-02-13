@@ -1,43 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ImageCard } from "./ImageCard";
-import coinKnight from "../assets/img/Projects/coinknightmenu.png";
-import projImg2 from "../assets/img/second work.jpg";
-import projImg3 from "../assets/img/project1.jpg";
-import projImg4 from "../assets/img/first work.jpg";
-import projImg5 from "../assets/img/fifth work.jpg";
-import projImg6 from "../assets/img/12345.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const ProjectImages = (project) => {
-
-  const images = [
-    {
-      title: "Coin Knight",
-      imgUrl: coinKnight,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg4,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg5,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg6,
-    },
-  ];
 
   console.log("Project", project)
   return (
