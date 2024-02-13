@@ -5,7 +5,7 @@ import {
   BrowserRouter, Route, Routes,
 } from "react-router-dom";
 import * as React from "react";
-import { ProjectCard } from './components/ProjectCard';
+import {  ProjectPage } from './components/ProjectPage';
 
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<MainPage/>} /> {/* 👈 Renders at /app/ */}
-          <Route path="project" exact element={<ProjectCard/>}/>
+          <Route path="project" exact element={<ProjectPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>
