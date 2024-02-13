@@ -14,8 +14,9 @@ export const Projects = () => {
 
   const projects = [
     {
-      
-      description: "Design & Development",
+      title: "Coin Knight",
+      projDescription: "Unity 2D Platformer",
+      projTagline: "Unity 2D Platformer",
       imgUrl: projImg1,
     },
     {
