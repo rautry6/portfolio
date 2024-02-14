@@ -19,7 +19,8 @@ export const Projects = () => {
       projDescription: "Coin Knight is a Unity 2D Platformer developed for the 2022 Toybox Game Jam with me and one other friend. "
       + "I developed the boss level designs and AI, coin throwing mechanic, the health system, the game over system, checkpoints in the platforming section, "
       + "and the intro and end of boss cutscenes. \n"
-      + "I am currently still adding to it in my free time and have added a new grappling mechanic and begun work on new bosses.",
+      + "I am currently still adding to it in my free time and have added a new grappling mechanic and begun work on new bosses.\n\n"
+      + "You can find a playable version on my itch.io page, SaneFlipper",
       projTagline: "Unity 2D Platformer",
       imgUrl: coinKnight,
       imageList: [
@@ -80,15 +81,15 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>I show you to all the big and small websites I have done so far</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Games</Nav.Link>
                     </Nav.Item>
-                    {/* <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                   <Nav.Item>
+                      <Nav.Link eventKey="second">Front-End</Nav.Link>
                     </Nav.Item>
+                     {/* 
                     <Nav.Item>
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
                     </Nav.Item> */}
@@ -108,7 +109,7 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
+                    <Tab.Pane eventKey="second">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
