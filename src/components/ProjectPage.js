@@ -16,7 +16,7 @@ export const ProjectPage = () => {
 
   return (
     <div className="App">
-      <ProjectNavbar />
+      <ProjectNavbar project={location.state}/>
       <ProjectBanner project={location.state}/>
       <ProjectImages project={location.state} />
       <Footer />

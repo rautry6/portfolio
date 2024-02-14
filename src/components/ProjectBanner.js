@@ -12,7 +12,7 @@ import {
 export const ProjectBanner = (project) => {
 console.log("Project Description", project.project)
   return (
-    <section className="banner" id="home">
+    <section className="banner" id="description">
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>

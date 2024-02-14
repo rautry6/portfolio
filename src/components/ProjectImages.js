@@ -8,7 +8,7 @@ export const ProjectImages = (project) => {
 
   console.log("Project", project)
   return (
-    <section className="project" id="projects">
+    <section className="project" id="images">
       <Container>
         <Row>
           <Col size={12}>
