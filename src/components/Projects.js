@@ -51,24 +51,158 @@ export const Projects = () => {
       ]
     },
     {
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Corporation Inc.",
+      projDescription: "Corporation Inc. is a 2D Narrative Driven Game devloped in Unity as part of the Kennesaw State University \n"
+      + "Game Narrative Lab. It follows the story of Maria, a recent immigrate to the US who has to navigate pleasing her new boss and\n"
+      + "helping the friend who helped her get the job. There are multiple endings in the game and the choices you make matter.\n"
+      + "\nI was the Lead Progammer for the project and developed the dialogue system using the Ink unity plugin, hooked up the settings, "
+      + "implemented all the art and UI into the game, implemented and found the SFX, implemented music, created the resume gameplay, "
+      + "and developed the cutscene system. \n"
+      + "\nCorporation Inc. won the Jennifer Anne's Group 2023 International Critical Thinking Game Design Challenge Competition.",
+      projTagline: "2D Narrative Driven Unity Game",
+      imgUrl: coinKnight,
+      imageList: [
+        {
+          image: coinKnight,
+          imageTitle: "Coin Knight Menu",
+        },
+        {
+          image: Platformer1,
+          imageTitle: "Platforming Gameplay"
+        },
+        {
+          image: Platformer2,
+          imageTitle: "Platforming Gameplay"
+        },
+        {
+          image: Boss1,
+          imageTitle: "Boss Fight"
+        },
+        {
+          image: Boss2,
+          imageTitle: "Boss Later Phase"
+        },
+        {
+          image: Death,
+          imageTitle: "Game Over"
+        },
+      ]
     },
     {
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Chiba",
+      projDescription: "Chiba is a 2D Puzzle Game similar to Sokoban developed with the Unity Game Engine. The player \n "
+      + "pushes pieces of food to cut them down to the correct cut levels before placing them on plates to complete the levels. \n"
+      + "Some items roll until they hit something, sometimes the player has to use grill tiles to cook certian foods while avoiding "
+      + "burning other, and there also placeable pieces of syrup and butter to change how the player interacts with foods. \n"
+      + "I developed the cutting mechanic, implemented the UI, developed the level select system, developed the level editor, "
+      + "developed rolling foods, assited in the grill tile feature development, and developed the syrup and butter mechanics. "
+      + "Chiba won Kennesaw State's Spring 2023 Computational Showcase Day and "
+      + "a playable version can be found on my friends itch.io page, ironlionm4n. (https://ironlionm4n.itch.io/chiba)",
+      projTagline: "Unity 2D Puzzle Game",
+      imgUrl: coinKnight,
+      imageList: [
+        {
+          image: coinKnight,
+          imageTitle: "Coin Knight Menu",
+        },
+        {
+          image: Platformer1,
+          imageTitle: "Platforming Gameplay"
+        },
+        {
+          image: Platformer2,
+          imageTitle: "Platforming Gameplay"
+        },
+        {
+          image: Boss1,
+          imageTitle: "Boss Fight"
+        },
+        {
+          image: Boss2,
+          imageTitle: "Boss Later Phase"
+        },
+        {
+          image: Death,
+          imageTitle: "Game Over"
+        },
+      ]
     },
     {
-      description: "Design & Development",
-      imgUrl: projImg4,
+      title: "Concrete Formwork Simulator",
+      projDescription: "Concrete Formwork Simulator is a serious educational game a team and I designed for a professor \n "
+      + "as part of a class project. The game is designed to teach students how to estimate the amount of supplies they need \n"
+      + "to make each formwork, estimate the correct cut sizes and amounts for each piece, and test their knowledge on the "
+      + "correct build order of each formwork. The game is not designed as a way to learn these skills but to practice what \n"
+      + "is being taught in class and the professor provides other materials for them to use as well. "
+      + "One other teamate and me were on the coding side of the project and we developed the Wall and Column formworks, fixed bugs "
+      + "with the existing product, greatly improved the building system, and added a few extra elements like SFX and explosions."
+      + "A playable version can be found on my friends itch.io page, ironlionm4n. (https://ironlionm4n.itch.io/cgdd4303-concrete-formwork-simulator)",
+      projTagline: "Unity 3D Educational Game",
+      imgUrl: coinKnight,
+      imageList: [
+        {
+          image: coinKnight,
+          imageTitle: "Coin Knight Menu",
+        },
+        {
+          image: Platformer1,
+          imageTitle: "Platforming Gameplay"
+        },
+        {
+          image: Platformer2,
+          imageTitle: "Platforming Gameplay"
+        },
+        {
+          image: Boss1,
+          imageTitle: "Boss Fight"
+        },
+        {
+          image: Boss2,
+          imageTitle: "Boss Later Phase"
+        },
+        {
+          image: Death,
+          imageTitle: "Game Over"
+        },
+      ]
     },
     {
-      description: "Design & Development",
-      imgUrl: projImg5,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg6,
+      title: "The Illusion of Weight",
+      projDescription: "The Illusion of Weight is a VR Research project I helped develop to test if using visual stimuli, \n "
+      + "dumbells in a virtual gym, and taactile feedback, bHaptic tact gloves, we could make the player think that \n"
+      + "objects in the VR environment had different weights. The project was developed on the Meta Quest 2 and 3 and uses "
+      + "bHapatic's tact gloves to emulate this 'weight' through vibrations that change depending on the dumbells weight \n"
+      + "and on if the player is raising or lowering the dumbells. "
+      + "The goal of the project is to be used in a study to see if VR and haptic feedback can be used to help the elderly "
+      + "stay active and exercise. The Illusion of Weight placed top 3 in Kennesaw State's Fall 2023 Computational Showcase Competition.",
+      projTagline: "Unity 3D VR Project",
+      imgUrl: coinKnight,
+      imageList: [
+        {
+          image: coinKnight,
+          imageTitle: "Coin Knight Menu",
+        },
+        {
+          image: Platformer1,
+          imageTitle: "Platforming Gameplay"
+        },
+        {
+          image: Platformer2,
+          imageTitle: "Platforming Gameplay"
+        },
+        {
+          image: Boss1,
+          imageTitle: "Boss Fight"
+        },
+        {
+          image: Boss2,
+          imageTitle: "Boss Later Phase"
+        },
+        {
+          image: Death,
+          imageTitle: "Game Over"
+        },
+      ]
     },
   ];
 
