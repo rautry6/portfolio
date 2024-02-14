@@ -17,8 +17,8 @@ export default function App() {
       <BrowserRouter>
       <ScrollToTop/>
         <Routes>
-          <Route path="portfolio" exact element={<MainPage/>} /> {/* 👈 Renders at /app/ */}
-          <Route path="portfolio/project" exact element={<ProjectPage/>}/>
+          <Route path="portfolio/"  element={<MainPage/>} /> {/* 👈 Renders at /app/ */}
+          <Route path="portfolio/project/"  element={<ProjectPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>
