@@ -8,6 +8,7 @@ import { ChibaComplete, ChibaLevel1, ChibaLevel2, ChibaLevel3, ChibaLevel4,
 import { GMOBoss, GMOCutscene, GMOMenu,GMOMutated,GMOStart } from "../assets/img/Projects/GMO";
 import { ConcreteBuilding1, ConcreteBuilding2, ConcreteControls, ConcreteCut, 
   ConcreteExplosion, ConcreteMenu, ConcreteResults } from "../assets/img/Projects/ConcreteFormwork";
+import { CorpAccepted, CoprDialogue2,CorpDialogue1,CorpGameplay,CorpMenu } from "../assets/img/Projects/Corporation Inc";
 import projImg2 from "../assets/img/second work.jpg";
 import projImg3 from "../assets/img/project1.jpg";
 import projImg4 from "../assets/img/first work.jpg";
@@ -66,31 +67,27 @@ export const Projects = () => {
       + "and developed the cutscene system. \n"
       + "\nCorporation Inc. won the Jennifer Anne's Group 2023 International Critical Thinking Game Design Challenge Competition.",
       projTagline: "2D Narrative Driven Unity Game",
-      imgUrl: coinKnight,
+      imgUrl: CorpDialogue1,
       imageList: [
         {
-          image: coinKnight,
-          imageTitle: "Coin Knight Menu",
+          image: CorpMenu,
+          imageTitle: "Menu Background",
         },
         {
-          image: Platformer1,
-          imageTitle: "Platforming Gameplay"
+          image: CorpAccepted,
+          imageTitle: "Intro Cutscene"
         },
         {
-          image: Platformer2,
-          imageTitle: "Platforming Gameplay"
+          image: CorpDialogue1,
+          imageTitle: "Dialogue"
         },
         {
-          image: Boss1,
-          imageTitle: "Boss Fight"
+          image: CoprDialogue2,
+          imageTitle: "Dialogue"
         },
         {
-          image: Boss2,
-          imageTitle: "Boss Later Phase"
-        },
-        {
-          image: Death,
-          imageTitle: "Game Over"
+          image: CorpGameplay,
+          imageTitle: "Resume Gameplay"
         },
       ]
     },
@@ -134,6 +131,10 @@ export const Projects = () => {
         {
           image: ChibaComplete,
           imageTitle: "Level Complete"
+        },
+        {
+          image: ChibaLevelSelect,
+          imageTitle: "Level Select"
         },
       ]
     },
