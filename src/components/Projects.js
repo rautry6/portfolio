@@ -2,6 +2,9 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import coinKnight from "../assets/img/Projects/coinknightmenu.png";
 import {Platformer1, Platformer2, Boss1, Boss2, Death} from "../assets/img/Projects/CoinKnight"
+import { jfMenu, jfGameplay1, jfGameplay2, ar, customization, prizes } from "../assets/img/Projects/JelloFellos";
+import { ChibaComplete, ChibaLevel1, ChibaLevel2, ChibaLevel3, ChibaLevel4, 
+  ChibaLevelSelect, ChibaMenu, ChibaTutorial } from "../assets/img/Projects/Chiba";
 import projImg2 from "../assets/img/second work.jpg";
 import projImg3 from "../assets/img/project1.jpg";
 import projImg4 from "../assets/img/first work.jpg";
@@ -99,31 +102,35 @@ export const Projects = () => {
       + "Chiba won Kennesaw State's Spring 2023 Computational Showcase Day and "
       + "a playable version can be found on my friends itch.io page, ironlionm4n. (https://ironlionm4n.itch.io/chiba)",
       projTagline: "Unity 2D Puzzle Game",
-      imgUrl: coinKnight,
+      imgUrl: ChibaMenu,
       imageList: [
         {
-          image: coinKnight,
-          imageTitle: "Coin Knight Menu",
+          image: ChibaMenu,
+          imageTitle: "Chiba Menu",
         },
         {
-          image: Platformer1,
-          imageTitle: "Platforming Gameplay"
+          image: ChibaTutorial,
+          imageTitle: "Tutorial Image"
         },
         {
-          image: Platformer2,
-          imageTitle: "Platforming Gameplay"
+          image: ChibaLevel1,
+          imageTitle: "World 1 Gameplay"
         },
         {
-          image: Boss1,
-          imageTitle: "Boss Fight"
+          image: ChibaLevel2,
+          imageTitle: "World 2 Gameplay"
         },
         {
-          image: Boss2,
-          imageTitle: "Boss Later Phase"
+          image: ChibaLevel3,
+          imageTitle: "World 3 Gameplay"
         },
         {
-          image: Death,
-          imageTitle: "Game Over"
+          image: ChibaLevel4,
+          imageTitle: "World 4 Gameplay"
+        },
+        {
+          image: ChibaComplete,
+          imageTitle: "Level Complete"
         },
       ]
     },
@@ -201,6 +208,79 @@ export const Projects = () => {
         {
           image: Death,
           imageTitle: "Game Over"
+        },
+      ]
+    },
+    {
+      title: "Get Me Out",
+      projDescription: "Get Me Out is a 2D Platfomer made in Unity in which the player plays as a Rabbit in an animal \n "
+      + "testing facility trying to escape after an accident in the lab. The player has to traverse through the facility,  \n"
+      + "collecting key cards and gaining power ups through testing machines to allow them to go through new routes and make it "
+      + "to the final boss which is blocking their escape. I developed the boss AI, boss platforming section, grapple hook, \n"
+      + "power up system, health system, frog enemy AI, rat enemy AI, and hooked up the animations for the corrupted enemy "
+      + "variants. The game was developed as part of a team for my Senior project at KSU. "
+      + "A playable version of Get Me Out can be found of my friends itch.io page, ironlionm4n (https://ironlionm4n.itch.io/gmo)",
+      projTagline: "Unity 2D Platformer",
+      imgUrl: coinKnight,
+      imageList: [
+        {
+          image: coinKnight,
+          imageTitle: "Coin Knight Menu",
+        },
+        {
+          image: Platformer1,
+          imageTitle: "Platforming Gameplay"
+        },
+        {
+          image: Platformer2,
+          imageTitle: "Platforming Gameplay"
+        },
+        {
+          image: Boss1,
+          imageTitle: "Boss Fight"
+        },
+        {
+          image: Boss2,
+          imageTitle: "Boss Later Phase"
+        },
+        {
+          image: Death,
+          imageTitle: "Game Over"
+        },
+      ]
+    },
+    {
+      title: "Jello Fellos",
+      projDescription: "Jellow Fellos is a Mobile Game developed in Unity as part of team for a class.  \n "
+      + "The player gets to customize their slime and is tasked with keeping it alive by not letting it's food or fun  \n"
+      + "bars reach 0. The player achieves this by playing minigames with the slime to win food to feed their slime. "
+      + "There are 3 minigames, Slime Plinko, player drops the slime down a plinko board to gain a random prize, \n"
+      + "Slime Hole, the player plays Corn Hole with their slime as the bean bag, and Slime Ball, the player plays "
+      + "Ski Ball with their slime as the ball. I developed the Slime Ball and Plink minigames, the prize inventory, the "
+      + "system for giving prizes, and the AR functionality. "
+      + "A playable version of Get Me Out can be found of my friends itch.io page, Noah Schultz (https://noahschultz.itch.io/jello-fellos)",
+      projTagline: "Unity Mobile Game",
+      imgUrl: jfMenu,
+      imageList: [
+        {
+          image: jfMenu,
+          imageTitle: "Jello Fellos Menu",
+        },
+        {
+          image: jfGameplay1,
+          imageTitle: "Slime Hole Gameplay"
+        },
+        {
+          image: jfGameplay2,
+          imageTitle: "Slime Ball Gameplay"
+        },
+        {
+          image: ar,
+          imageTitle: "Slime in AR"
+        },
+        {
+          image: prizes,
+          imageTitle: "Prize Inventory"
         },
       ]
     },
