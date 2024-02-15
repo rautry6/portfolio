@@ -6,6 +6,8 @@ import { jfMenu, jfGameplay1, jfGameplay2, ar, customization, prizes } from "../
 import { ChibaComplete, ChibaLevel1, ChibaLevel2, ChibaLevel3, ChibaLevel4, 
   ChibaLevelSelect, ChibaMenu, ChibaTutorial } from "../assets/img/Projects/Chiba";
 import { GMOBoss, GMOCutscene, GMOMenu,GMOMutated,GMOStart } from "../assets/img/Projects/GMO";
+import { ConcreteBuilding1, ConcreteBuilding2, ConcreteControls, ConcreteCut, 
+  ConcreteExplosion, ConcreteMenu, ConcreteResults } from "../assets/img/Projects/ConcreteFormwork";
 import projImg2 from "../assets/img/second work.jpg";
 import projImg3 from "../assets/img/project1.jpg";
 import projImg4 from "../assets/img/first work.jpg";
@@ -146,32 +148,38 @@ export const Projects = () => {
       + "with the existing product, greatly improved the building system, and added a few extra elements like SFX and explosions."
       + "A playable version can be found on my friends itch.io page, ironlionm4n. (https://ironlionm4n.itch.io/cgdd4303-concrete-formwork-simulator)",
       projTagline: "Unity 3D Educational Game",
-      imgUrl: coinKnight,
+      imgUrl: ConcreteBuilding1,
       imageList: [
         {
-          image: coinKnight,
-          imageTitle: "Coin Knight Menu",
+          image: ConcreteMenu,
+          imageTitle: "Main Menu",
         },
         {
-          image: Platformer1,
-          imageTitle: "Platforming Gameplay"
+          image: ConcreteControls,
+          imageTitle: "Instructions Screen"
         },
         {
-          image: Platformer2,
-          imageTitle: "Platforming Gameplay"
+          image: ConcreteBuilding1,
+          imageTitle: "Building Gameplay"
         },
         {
-          image: Boss1,
-          imageTitle: "Boss Fight"
+          image: ConcreteBuilding2,
+          imageTitle: "Building Gameplay"
         },
         {
-          image: Boss2,
-          imageTitle: "Boss Later Phase"
+          image: ConcreteCut,
+          imageTitle: "Cut Menu"
         },
         {
-          image: Death,
-          imageTitle: "Game Over"
+          image: ConcreteExplosion,
+          imageTitle: "Failed Explosion"
         },
+        {
+          image: ConcreteResults,
+          imageTitle: "Results"
+        },
+
+
       ]
     },
     {
@@ -222,7 +230,7 @@ export const Projects = () => {
       + "variants. The game was developed as part of a team for my Senior project at KSU. "
       + "A playable version of Get Me Out can be found of my friends itch.io page, ironlionm4n (https://ironlionm4n.itch.io/gmo)",
       projTagline: "Unity 2D Platformer",
-      imgUrl: GMOMenu,
+      imgUrl: GMOStart,
       imageList: [
         {
           image: GMOMenu,
