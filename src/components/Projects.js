@@ -5,6 +5,7 @@ import {Platformer1, Platformer2, Boss1, Boss2, Death} from "../assets/img/Proje
 import { jfMenu, jfGameplay1, jfGameplay2, ar, customization, prizes } from "../assets/img/Projects/JelloFellos";
 import { ChibaComplete, ChibaLevel1, ChibaLevel2, ChibaLevel3, ChibaLevel4, 
   ChibaLevelSelect, ChibaMenu, ChibaTutorial } from "../assets/img/Projects/Chiba";
+import { GMOBoss, GMOCutscene, GMOMenu,GMOMutated,GMOStart } from "../assets/img/Projects/GMO";
 import projImg2 from "../assets/img/second work.jpg";
 import projImg3 from "../assets/img/project1.jpg";
 import projImg4 from "../assets/img/first work.jpg";
@@ -221,31 +222,28 @@ export const Projects = () => {
       + "variants. The game was developed as part of a team for my Senior project at KSU. "
       + "A playable version of Get Me Out can be found of my friends itch.io page, ironlionm4n (https://ironlionm4n.itch.io/gmo)",
       projTagline: "Unity 2D Platformer",
-      imgUrl: coinKnight,
+      imgUrl: GMOMenu,
       imageList: [
         {
-          image: coinKnight,
-          imageTitle: "Coin Knight Menu",
+          image: GMOMenu,
+          imageTitle: "Get Me Out Menu",
         },
         {
-          image: Platformer1,
+          image: GMOCutscene,
+          imageTitle: "Intro Cutscene"
+        },
+        {
+          image: GMOStart,
           imageTitle: "Platforming Gameplay"
         },
         {
-          image: Platformer2,
-          imageTitle: "Platforming Gameplay"
+          image: GMOMutated,
+          imageTitle: "Mutated Enemy"
         },
+
         {
-          image: Boss1,
-          imageTitle: "Boss Fight"
-        },
-        {
-          image: Boss2,
-          imageTitle: "Boss Later Phase"
-        },
-        {
-          image: Death,
-          imageTitle: "Game Over"
+          image: GMOBoss,
+          imageTitle: "Boss Battle"
         },
       ]
     },
