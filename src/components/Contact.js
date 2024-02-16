@@ -59,8 +59,12 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
+                <h3>Reach out to me via email</h3>
+                <h2>reidautry02@gmail.com</h2>
+                <h3>or by phone</h3>
+                <h2>706-612-7937</h2>
                 <form onSubmit={handleSubmit}>
-                  <Row>
+                  {/*<Row>
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                     </Col>
@@ -83,7 +87,7 @@ export const Contact = () => {
                         <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                       </Col>
                     }
-                  </Row>
+                  </Row>*/}
                 </form>
               </div>}
             </TrackVisibility>
