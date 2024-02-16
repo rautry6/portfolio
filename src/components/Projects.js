@@ -15,11 +15,7 @@ import {
 import { CorpAccepted, CoprDialogue2, CorpDialogue1, CorpGameplay, CorpMenu } from "../assets/img/Projects/Corporation Inc";
 import { PollAnswered, PollCreate,PollLeaderboard,PollLogin,PollQuestion } from "../assets/img/Projects/Employee Polls";
 import { WeightGym, WeightBackground,WeightDumbell,WeightStressball } from "../assets/img/Projects/Illusion of Weight";
-import projImg2 from "../assets/img/second work.jpg";
-import projImg3 from "../assets/img/project1.jpg";
-import projImg4 from "../assets/img/first work.jpg";
-import projImg5 from "../assets/img/fifth work.jpg";
-import projImg6 from "../assets/img/12345.jpg";
+import { ReadsSearch, ReadsNoResults, ReadsShelves } from "../assets/img/Projects/MyReads";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -318,6 +314,30 @@ export const Projects = () => {
           imageTitle: "Creating a New Poll"
         },
 
+
+      ]
+    },
+    {
+      title: "My Reads",
+      projDescription: "This is a simple react application created as part of my Udactiy React Nanodegree certification.\n "
+        + "The application allows you to keep tracka of different books you have read, want to read, or are currently reading by \n"
+        + "sorting them into their own shelves. To add more books you can click the plus button and search for books to add. "
+        + "The books can be changed or removed from the shelves at any time. \n",
+      projTagline: "React Application",
+      imgUrl: ReadsShelves,
+      imageList: [
+        {
+          image: ReadsShelves,
+          imageTitle: "Book Shelves",
+        },
+        {
+          image: ReadsSearch,
+          imageTitle: "Search Page"
+        },
+        {
+          image: ReadsNoResults,
+          imageTitle: "Book not in library"
+        },
 
       ]
     },
