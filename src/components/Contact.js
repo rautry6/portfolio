@@ -61,8 +61,6 @@ export const Contact = () => {
                 <h2>Get In Touch</h2>
                 <h3>Reach out to me via email</h3>
                 <h2>reidautry02@gmail.com</h2>
-                <h3>or by phone</h3>
-                <h2>706-612-7937</h2>
                 <form onSubmit={handleSubmit}>
                   {/*<Row>
                     <Col size={12} sm={6} className="px-1">
