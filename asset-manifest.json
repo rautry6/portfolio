@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.167efa32.css",
-    "main.js": "/portfolio/static/js/main.ea9f32f2.js",
+    "main.js": "/portfolio/static/js/main.284a9208.js",
     "static/js/787.fb771931.chunk.js": "/portfolio/static/js/787.fb771931.chunk.js",
     "static/media/building2.png": "/portfolio/static/media/building2.e4c52bdf48c53c16c764.png",
     "static/media/explosion.png": "/portfolio/static/media/explosion.dbc42e1b2813ea1a0715.png",
@@ -29,6 +29,7 @@
     "static/media/ReadsSearch.jpg": "/portfolio/static/media/ReadsSearch.64c01f7423d7b45715e0.jpg",
     "static/media/chibatutorial.png": "/portfolio/static/media/chibatutorial.89bcf7e4215a3d533f2d.png",
     "static/media/header-img.svg": "/portfolio/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/computer-png.png": "/portfolio/static/media/computer-png.53ea7fc6f3422d8638c3.png",
     "static/media/customization.png": "/portfolio/static/media/customization.726c59d429f31b8ec2b5.png",
     "static/media/ReadsShelves.jpg": "/portfolio/static/media/ReadsShelves.ee6c7b1109c5cc889137.jpg",
     "static/media/levelcomplete.png": "/portfolio/static/media/levelcomplete.a1139ee64c1ca1c2eb53.png",
@@ -78,11 +79,11 @@
     "static/media/arrow2.svg": "/portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.167efa32.css.map": "/portfolio/static/css/main.167efa32.css.map",
-    "main.ea9f32f2.js.map": "/portfolio/static/js/main.ea9f32f2.js.map",
+    "main.284a9208.js.map": "/portfolio/static/js/main.284a9208.js.map",
     "787.fb771931.chunk.js.map": "/portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.167efa32.css",
-    "static/js/main.ea9f32f2.js"
+    "static/js/main.284a9208.js"
   ]
 }
