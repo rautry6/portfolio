@@ -14,6 +14,7 @@ import {
 } from "../assets/img/Projects/ConcreteFormwork";
 import { CorpAccepted, CoprDialogue2, CorpDialogue1, CorpGameplay, CorpMenu } from "../assets/img/Projects/Corporation Inc";
 import { PollAnswered, PollCreate,PollLeaderboard,PollLogin,PollQuestion } from "../assets/img/Projects/Employee Polls";
+import { WeightGym, WeightBackground,WeightDumbell,WeightStressball } from "../assets/img/Projects/Illusion of Weight";
 import projImg2 from "../assets/img/second work.jpg";
 import projImg3 from "../assets/img/project1.jpg";
 import projImg4 from "../assets/img/first work.jpg";
@@ -198,31 +199,19 @@ export const Projects = () => {
         + "The goal of the project is to be used in a study to see if VR and haptic feedback can be used to help the elderly "
         + "stay active and exercise. The Illusion of Weight placed top 3 in Kennesaw State's Fall 2023 Computational Showcase Competition.",
       projTagline: "Unity 3D VR Project",
-      imgUrl: coinKnight,
+      imgUrl: WeightBackground,
       imageList: [
         {
-          image: coinKnight,
-          imageTitle: "Coin Knight Menu",
+          image: WeightDumbell,
+          imageTitle: "Virtual Dumbbell"
         },
         {
-          image: Platformer1,
-          imageTitle: "Platforming Gameplay"
+          image: WeightGym,
+          imageTitle: "Virtual Gym"
         },
         {
-          image: Platformer2,
-          imageTitle: "Platforming Gameplay"
-        },
-        {
-          image: Boss1,
-          imageTitle: "Boss Fight"
-        },
-        {
-          image: Boss2,
-          imageTitle: "Boss Later Phase"
-        },
-        {
-          image: Death,
-          imageTitle: "Game Over"
+          image: WeightStressball,
+          imageTitle: "Virtual Stressball"
         },
       ]
     },
