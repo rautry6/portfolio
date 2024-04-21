@@ -60,7 +60,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Reid,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Front-End Developer", "Game Developer", "Game Designer"]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Reid,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[  "Game Developer", "Game Designer", "Front-End Developer"]'><span className="wrap">{text}</span></span></h1>
                 <p>My fullname is Johnathon Reid Autry. I'm 21 years old. I graduated from Kennesaw State University with a Bachelors of Science in Computer Game Design and Development
                    with a double minor in Computer Science and Software Engineering. I am a Front-End Developer and a Game Developer and Designer. 
                 </p>
