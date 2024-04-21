@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d886c406.css",
-    "main.js": "/portfolio/static/js/main.8b5b0529.js",
+    "main.js": "/portfolio/static/js/main.c1ff9c75.js",
     "reactPlayerYouTube.js": "/portfolio/static/js/reactPlayerYouTube.de41ea30.chunk.js",
     "reactPlayerSoundCloud.js": "/portfolio/static/js/reactPlayerSoundCloud.20d08924.chunk.js",
     "reactPlayerVimeo.js": "/portfolio/static/js/reactPlayerVimeo.5e1a8b96.chunk.js",
@@ -19,17 +19,22 @@
     "static/js/787.fb771931.chunk.js": "/portfolio/static/js/787.fb771931.chunk.js",
     "static/media/Flame_Skull_Phase_2.mp4": "/portfolio/static/media/Flame_Skull_Phase_2.3ee7ce717f3bc959a595.mp4",
     "static/media/Mage_Phase_2.mp4": "/portfolio/static/media/Mage_Phase_2.f8a3a7c534091b2bf637.mp4",
+    "static/media/Grapple_1.mp4": "/portfolio/static/media/Grapple_1.778cdf0aa988277345d7.mp4",
     "static/media/Golem_Phase_1.mp4": "/portfolio/static/media/Golem_Phase_1.a677b9af8d44599bfc98.mp4",
     "static/media/Golem_Phase_2.mp4": "/portfolio/static/media/Golem_Phase_2.860796409e357ac311f8.mp4",
     "static/media/Flame_Skull_Phase_3.mp4": "/portfolio/static/media/Flame_Skull_Phase_3.c57052d6f56796000bb9.mp4",
     "static/media/Golem_Clap.mp4": "/portfolio/static/media/Golem_Clap.0ffcdb8e840179d9c4aa.mp4",
     "static/media/Mage_Phase_3.mp4": "/portfolio/static/media/Mage_Phase_3.1aa0a94c00777619cf84.mp4",
     "static/media/Flame_Skull_Phase_1.mp4": "/portfolio/static/media/Flame_Skull_Phase_1.2055675d7a3775175ee2.mp4",
+    "static/media/Grapple_2.mp4": "/portfolio/static/media/Grapple_2.71d131b3a98d614467a6.mp4",
     "static/media/Mage_Phase_1.mp4": "/portfolio/static/media/Mage_Phase_1.cc0fb68de26a44c598b3.mp4",
     "static/media/building2.png": "/portfolio/static/media/building2.e4c52bdf48c53c16c764.png",
     "static/media/explosion.png": "/portfolio/static/media/explosion.dbc42e1b2813ea1a0715.png",
     "static/media/building1.png": "/portfolio/static/media/building1.172f9c84da0e1e02d489.png",
     "static/media/virtualgym.png": "/portfolio/static/media/virtualgym.4d1300f45df9bebdf640.png",
+    "static/media/Dash_1.mp4": "/portfolio/static/media/Dash_1.eade1460395d45bcccea.mp4",
+    "static/media/NPC_1.mp4": "/portfolio/static/media/NPC_1.2dd2a5a80637d6f1d94d.mp4",
+    "static/media/Coin_2.mp4": "/portfolio/static/media/Coin_2.8571ccb99a0b1161f830.mp4",
     "static/media/gameplay.png": "/portfolio/static/media/gameplay.99260a2426d41a82e61f.png",
     "static/media/dialogue2.png": "/portfolio/static/media/dialogue2.723814b1a991d36b9cd9.png",
     "static/media/background.jpg": "/portfolio/static/media/background.ae22a49aef3afa7803a3.jpg",
@@ -40,6 +45,7 @@
     "static/media/prize.png": "/portfolio/static/media/prize.92a8366188a7a3440f82.png",
     "static/media/accepted.png": "/portfolio/static/media/accepted.233bb5e5a5020a176ff8.png",
     "static/media/color-sharp2.png": "/portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/Coin_1.mp4": "/portfolio/static/media/Coin_1.85b195a0a2abb5f850bf.mp4",
     "static/media/gmoboss.png": "/portfolio/static/media/gmoboss.4c26a41b22f4936651af.png",
     "static/media/gmostart.png": "/portfolio/static/media/gmostart.7a5dd60c47dee3e9afdf.png",
     "static/media/github_icon1.png": "/portfolio/static/media/github_icon1.9c6f016d6d024ef77c69.png",
@@ -102,7 +108,7 @@
     "static/media/arrow2.svg": "/portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.d886c406.css.map": "/portfolio/static/css/main.d886c406.css.map",
-    "main.8b5b0529.js.map": "/portfolio/static/js/main.8b5b0529.js.map",
+    "main.c1ff9c75.js.map": "/portfolio/static/js/main.c1ff9c75.js.map",
     "reactPlayerYouTube.de41ea30.chunk.js.map": "/portfolio/static/js/reactPlayerYouTube.de41ea30.chunk.js.map",
     "reactPlayerSoundCloud.20d08924.chunk.js.map": "/portfolio/static/js/reactPlayerSoundCloud.20d08924.chunk.js.map",
     "reactPlayerVimeo.5e1a8b96.chunk.js.map": "/portfolio/static/js/reactPlayerVimeo.5e1a8b96.chunk.js.map",
@@ -121,6 +127,6 @@
   },
   "entrypoints": [
     "static/css/main.d886c406.css",
-    "static/js/main.8b5b0529.js"
+    "static/js/main.c1ff9c75.js"
   ]
 }
