@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import coinKnight from "../assets/img/Projects/coinknightmenu.png";
 import { Platformer1, Platformer2, Boss1, Boss2, Death } from "../assets/img/Projects/CoinKnight"
-import {FSPhase1, FSPhase2, FSPhase3, MPhase1, MPhase2, MPhase3, GClap,GPhase1,GPhase2} from "../assets/vid/Projects/CoinKnight";
+import {FSPhase1, FSPhase2, FSPhase3, MPhase1, MPhase2, MPhase3, GClap,GPhase1,GPhase2, Dash1, Grapple1, Grapple2, NPC1, Coin1, Coin2} from "../assets/vid/Projects/CoinKnight";
 import { jfMenu, jfGameplay1, jfGameplay2, ar, customization, prizes } from "../assets/img/Projects/JelloFellos";
 import {
   ChibaComplete, ChibaLevel1, ChibaLevel2, ChibaLevel3, ChibaLevel4,
@@ -97,6 +97,57 @@ export const Projects = () => {
                 "\t The second phase adds a ground slam attack to the boss's combo. The combo is only executed after a single hand attack and the other hand that is not trying to slam into the player will slam down onto the ground and cause two waves to shoot out in both directions from the impace spot and travel until they hit a wall.",
                 "\t The third phase is still in development and at this moment no attack has been decided on.",
                 "\t ",
+              ]
+            },
+          ]
+      
+        },
+        {
+          headerName: "Ability Design",
+          subheadings: [
+            {
+              headerName: "Dash",
+              videos: [Dash1],
+              textBlurb: [
+                "\t The dash ability gives the player a short burst of invincibility and a small boost in velocity. This allows the player to dodge attacks and move around the arena faster. The dash is on a cooldown so the player can not spam it.",
+                "\t We decided to add this ability originally to make the first boss a bit easier as without it the fireballs in the first and third phase were much harder to dodge. However we believe it allows us to be more creative with the enemy and boss attacks. ",
+                "\t We are thinking about adding an upgrade to this ability later but it is still in the planning stages.",
+              ]
+            },
+            {
+              headerName: "Grappling Hook",
+              videos: [Grapple1, Grapple2],
+              textBlurb: [
+                "\t The grappling hook allows the player to attach to certain points in the world and swing around them. These are currently represented by hooks. The player uses the mouse to aim the grapple and the right mouse button to shoot it. Once the grapple is attached to something the player can move up and down on it and retract/extend the rope (We are currently redoing the grapple and this feature may or may not be left out).",
+                "\t There are two types of grapple points in the currently. The first is the regular grapple point that the player can attach to and swing around. The second is a moving grapple point that once the player attaches to will start moving to a set destination point. This allows use to the grapple hook to make more interesting platforming sections, puzzles, and boss fights. For example, we use the moving hooks currently in the Mage of Bounciness boss fight to make the player have to grapple back and forth between two grapple points as by staying attached to one they will slowly be moved down into damaging projectiles.",
+              ]
+            },
+          ]
+      
+        },
+        {
+          headerName: "NPC Design",
+          subheadings: [
+            {
+              headerName: "NPC Behavior Tree",
+              videos: [NPC1],
+              textBlurb: [
+                "\t To allow us to create a detailed and interesting NPC system I decided to implement a behavior tree system. This should allow us to more easily create complex NPC behaviors and make them feel more player like and unique instead of having them just blindly follow the player around by leveraging the trees Selector and Sequence nodes. The system is still in development but we have already created a few basic actions such as following and jumping but the end goal is to give them their own unique ability that the player can use to their advantage and to have them use some parts of the players kit like grappling themselves around to keep up. ",
+                "\t This system is still very early on in development and I will be working on it more in the future after completing the Golem boss fight.",
+              ]
+            },
+          ]
+      
+        },
+        {
+          headerName: "Gameplay Design",
+          subheadings: [
+            {
+              headerName: "Coins",
+              videos: [Coin1, Coin2],
+              textBlurb: [
+                "\t Coins and how the player uses them is the central mechanic of our game. The player collects coins by picking them up in the world and then can throw them at enemies and bosses to damage them. The player can only hold a certain number of coins, currently capped at three but we are considering expanding and making the amount upgradable. To throw a coin the player aims with the mouse and uses the left mouse button to throw. The coin will then travel in a straight line until it hits something or falls back to the ground. If the player misses they can pick up their coin however thrown coins have a time limit before they disappear indicated by them flashing. ",
+                "\t Since the player can only hold a certain number of coins they have to be strategic about when they throw them, otherwise they will find themselves defensless and have to go find more coins."
               ]
             },
           ]
