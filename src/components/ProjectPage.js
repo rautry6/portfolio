@@ -4,6 +4,7 @@ import { NavBar } from "./NavBar";
 import { ProjectNavbar } from "./ProjectNavbar";
 import { ProjectBanner } from "./ProjectBanner";
 import { ProjectImages } from './ProjectImages';
+import { ProjectInfo } from './ProjectInfo';
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
@@ -18,6 +19,7 @@ export const ProjectPage = () => {
     <div className="App">
       <ProjectNavbar project={location.state}/>
       <ProjectBanner project={location.state}/>
+      <ProjectInfo project={location.state} />
       <ProjectImages project={location.state} />
       <Footer />
     </div>

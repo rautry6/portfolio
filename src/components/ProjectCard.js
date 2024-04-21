@@ -1,13 +1,14 @@
 import { Col } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-export const ProjectCard = ({ title, projDescription, projTagline, imgUrl, imageList }) => {
+export const ProjectCard = ({ title, projDescription, projectInfo, projTagline, imgUrl, imageList }) => {
   return (
 
     <Col size={12} sm={6} md={4}>
           <NavLink to="project" state={{
       name: title,
       description: projDescription, 
+      projInfo: projectInfo,
       tagline: projTagline,
       images:imageList,
       imageUrl: imgUrl,

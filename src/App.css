@@ -300,6 +300,72 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+/************ Project Info Css ************/
+.info {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+  padding-top: 20px;
+  text-underline-position: auto;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.info h2 {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+  padding-top: 20px;
+  text-underline-position: auto;
+  font-style: italic;
+}
+
+.info p {
+  color: #B8B8B8;
+  font-size: 24px;
+  letter-spacing: 0.8px;
+  line-height: 1.6em;
+  width: 96%;
+  padding-bottom: 20px;
+}
+
+
+.info ul {
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0.8px;
+  line-height: 1.6em;
+  width: 96%;
+  padding-bottom: 20px;
+}
+
+.info li {
+  color: #B8B8B8;
+  font-size: 24px;
+  letter-spacing: 0.8px;
+  line-height: 1.6em;
+  width: 96%;
+  font-weight: bold;
+}
+
+.info ReactPlayer {
+  margin-top: 20px;
+}
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
