@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d886c406.css",
-    "main.js": "/portfolio/static/js/main.f70a61e5.js",
+    "main.js": "/portfolio/static/js/main.11413157.js",
     "reactPlayerYouTube.js": "/portfolio/static/js/reactPlayerYouTube.de41ea30.chunk.js",
     "reactPlayerSoundCloud.js": "/portfolio/static/js/reactPlayerSoundCloud.20d08924.chunk.js",
     "reactPlayerVimeo.js": "/portfolio/static/js/reactPlayerVimeo.5e1a8b96.chunk.js",
@@ -26,8 +26,10 @@
     "static/media/Golem_Clap.mp4": "/portfolio/static/media/Golem_Clap.0ffcdb8e840179d9c4aa.mp4",
     "static/media/Mage_Phase_3.mp4": "/portfolio/static/media/Mage_Phase_3.1aa0a94c00777619cf84.mp4",
     "static/media/Flame_Skull_Phase_1.mp4": "/portfolio/static/media/Flame_Skull_Phase_1.2055675d7a3775175ee2.mp4",
+    "static/media/Dumbells_1.mp4": "/portfolio/static/media/Dumbells_1.95dd2b0ddf90ddfe105c.mp4",
     "static/media/Grapple_2.mp4": "/portfolio/static/media/Grapple_2.71d131b3a98d614467a6.mp4",
     "static/media/Mage_Phase_1.mp4": "/portfolio/static/media/Mage_Phase_1.cc0fb68de26a44c598b3.mp4",
+    "static/media/Stressball_1.mp4": "/portfolio/static/media/Stressball_1.c78041aef6f058521689.mp4",
     "static/media/Resume_1.mp4": "/portfolio/static/media/Resume_1.b9d13ff5e1e346ca5946.mp4",
     "static/media/Column_1.mp4": "/portfolio/static/media/Column_1.70ef791b955661845134.mp4",
     "static/media/Wall_1.mp4": "/portfolio/static/media/Wall_1.f14136479cef0dc3f1bf.mp4",
@@ -128,7 +130,7 @@
     "static/media/arrow2.svg": "/portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.d886c406.css.map": "/portfolio/static/css/main.d886c406.css.map",
-    "main.f70a61e5.js.map": "/portfolio/static/js/main.f70a61e5.js.map",
+    "main.11413157.js.map": "/portfolio/static/js/main.11413157.js.map",
     "reactPlayerYouTube.de41ea30.chunk.js.map": "/portfolio/static/js/reactPlayerYouTube.de41ea30.chunk.js.map",
     "reactPlayerSoundCloud.20d08924.chunk.js.map": "/portfolio/static/js/reactPlayerSoundCloud.20d08924.chunk.js.map",
     "reactPlayerVimeo.5e1a8b96.chunk.js.map": "/portfolio/static/js/reactPlayerVimeo.5e1a8b96.chunk.js.map",
@@ -147,6 +149,6 @@
   },
   "entrypoints": [
     "static/css/main.d886c406.css",
-    "static/js/main.f70a61e5.js"
+    "static/js/main.11413157.js"
   ]
 }
