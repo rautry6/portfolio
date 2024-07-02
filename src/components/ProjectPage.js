@@ -13,7 +13,7 @@ import { useLocation } from 'react-router-dom';
 
 export const ProjectPage = () => {
     const location = useLocation()
-    console.log(location.state)
+    //console.log(location.state)
 
   return (
     <div className="App">

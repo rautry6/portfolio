@@ -2,21 +2,21 @@ import { Container, Row, Col } from "react-bootstrap";
 import ReactPlayer from "react-player";
 
 export const ProjectInfo = (project) => {
-    console.log(project.project)
+    //console.log(project.project)
     return (
         <section className="info" id="info">
-            <Container>
+            <Container style={{paddingTop : "-20px"}}>
                 {project.project?.projInfo?.map((info, index) => (
                         <div>
                             <h1>{`${info.headerName}`} </h1>
-                            <ul>
+                            <ul key={index}>
                                 {info.listItems?.map((item, index) => (
                                     <li key={index}>{item}</li>
                                 ))}
                             </ul>
                             {info.subheadings?.map((subHeading, index) => (
                                 //log the subheading
-                                console.log(subHeading),
+                                //console.log(subHeading),
                                 <div key={index}>
                                     <h2>{subHeading.headerName}</h2>
                                     <Row>
