@@ -6,7 +6,7 @@ import TrackVisibility from 'react-on-screen';
 
 export const ProjectImages = (project) => {
 
-  console.log("Project", project)
+  //console.log("Project", project)
   return (
     <section className="project" id="images">
       <Container>

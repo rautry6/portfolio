@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-export const ProjectCard = ({ title, projDescription, projectInfo, projTagline, imgUrl, imageList }) => {
+export const ProjectCard = ({ title, projDescription, projectInfo, projTagline, imgUrl, imageList, buttonLink }) => {
   return (
 
     <Col size={12} sm={6} md={4}>
@@ -12,7 +12,7 @@ export const ProjectCard = ({ title, projDescription, projectInfo, projTagline, 
       tagline: projTagline,
       images:imageList,
       imageUrl: imgUrl,
-
+      btLink: buttonLink, 
     }}>
       <div className="proj-imgbx">
         <img src={imgUrl} />
