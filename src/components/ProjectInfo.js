@@ -19,8 +19,8 @@ export const ProjectInfo = (project) => {
                                 //console.log(subHeading),
                                 <div key={index}>
                                     <h2>{subHeading.headerName}</h2>
-                                    <Row>
-                                        <Col xs lg={6}>
+                                    <Row className="container">
+                                        <Col s lg={6}>
                                             {subHeading.textBlurb?.map((paragraph, index) => (
                                                 <p key={index}>{paragraph}</p>
                                             ))}
@@ -29,11 +29,11 @@ export const ProjectInfo = (project) => {
                                             ))
                                             }
                                         </Col>
-                                        <Col xs={6} lg>
+                                        <Col s={6} lg>
                                             {subHeading.videos?.map((video, index) => (
                                                 <div>
                                                 <p></p>
-                                                <ReactPlayer url={video} muted={true} loop={true} playing={true} width={'100%'}/>
+                                                <ReactPlayer url={video} muted={true} loop={true} playing={true} width={'100%'} height={'100%'}/>
                                                 <p style={{marginBottom: "50px"}}></p>
                                                 </div>
                                             ))}
