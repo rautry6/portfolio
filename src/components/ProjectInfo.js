@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import ReactPlayer from "react-player";
+import { isMobile } from 'react-device-detect';
 
 export const ProjectInfo = (project) => {
     //console.log(project.project)
@@ -33,7 +34,7 @@ export const ProjectInfo = (project) => {
                                             {subHeading.videos?.map((video, index) => (
                                                 <div>
                                                 <p></p>
-                                                <ReactPlayer url={video} muted={true} loop={true} playing={true} width={'100%'} height={'100%'}/>
+                                                <ReactPlayer url={video} muted={true} loop={true} playing={!isMobile} width={'100%'} height={'100%'}/>
                                                 <p style={{marginBottom: "50px"}}></p>
                                                 </div>
                                             ))}

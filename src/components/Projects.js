@@ -22,7 +22,7 @@ import { WeightGym, WeightBackground,WeightDumbell,WeightStressball } from "../a
 import {Dumbell1, Stressball1} from "../assets/vid/Projects/Weight";
 import { ReadsSearch, ReadsNoResults, ReadsShelves } from "../assets/img/Projects/MyReads";
 import { Dracorex, IdleSystems, Volcano, Pteradon, Flying, Aging, Asteroid, Rings, Viewing } from "../assets/vid/Projects/Idle Dino";
-import { Idle } from "../assets/img/Projects/IdleDino";
+import { Idle, Dino1, Dino2, Dino3 } from "../assets/img/Projects/IdleDino";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -254,36 +254,16 @@ export const Projects = () => {
       imgUrl: Idle,
       imageList: [
         {
-          image: ChibaMenu,
-          imageTitle: "Chiba Menu",
+          image: Dino1,
+          imageTitle: "",
         },
         {
-          image: ChibaTutorial,
-          imageTitle: "Tutorial Image"
+          image: Dino2,
+          imageTitle: ""
         },
         {
-          image: ChibaLevel1,
-          imageTitle: "World 1 Gameplay"
-        },
-        {
-          image: ChibaLevel2,
-          imageTitle: "World 2 Gameplay"
-        },
-        {
-          image: ChibaLevel3,
-          imageTitle: "World 3 Gameplay"
-        },
-        {
-          image: ChibaLevel4,
-          imageTitle: "World 4 Gameplay"
-        },
-        {
-          image: ChibaComplete,
-          imageTitle: "Level Complete"
-        },
-        {
-          image: ChibaLevelSelect,
-          imageTitle: "Level Select"
+          Dino3,
+          imageTitle: ""
         },
       ]
     },
