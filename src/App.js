@@ -9,9 +9,10 @@ import {  ProjectPage } from './components/ProjectPage';
 import ScrollToTop from './components/ScrollToTop'
 
 
-
-
 export default function App() {
+
+
+
   return (
     <div>
       <BrowserRouter>
