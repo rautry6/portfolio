@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { ArrowRightCircle, TypeUnderline } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { HashLink } from "react-router-hash-link";
@@ -24,7 +24,7 @@ export const ProjectBanner = (project) => {
                 <Row xs={12} md={6} xl={7}>
                   <p>{`${project.project.description}`}</p>
                   <a href= {project.project.btLink} target="_blank">
-                    <button title={project.project.btLink}>Find it on steam here!</button>
+                    <button style={{ textDecoration: 'underline' }} title={project.project.btLink}>Available here!</button>
                   </a>
                 </Row>
               </div>

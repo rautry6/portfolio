@@ -252,6 +252,7 @@ export const Projects = () => {
         },
       ],
       imgUrl: Idle,
+      buttonLink: "https://store.steampowered.com/app/3147390/Idle_Dino/",
       imageList: [
         {
           image: Dino1,
@@ -275,6 +276,7 @@ export const Projects = () => {
         + "I am currently still adding to it in my free time and have added a new grappling mechanic and begun work on new bosses.\n\n"
         + "You can find a playable version on my itch.io page, SaneFlipper",
       projTagline: "Unity 2D Platformer",
+      buttonLink:"https://sirflipper.itch.io/coin-knight" ,
       projectInfo:
       [
         {
@@ -437,6 +439,7 @@ export const Projects = () => {
         + "Chiba won Kennesaw State's Spring 2023 Computational Showcase Day and "
         + "a playable version can be found on my friends itch.io page, ironlionm4n. (https://ironlionm4n.itch.io/chiba)",
       projTagline: "Unity 2D Puzzle Game",
+      buttonLink: "https://ironlionm4n.itch.io/chiba",
       projectInfo:
       [
         {
@@ -590,6 +593,7 @@ export const Projects = () => {
         + "A playable version can be found on my friends itch.io page, ironlionm4n. (https://ironlionm4n.itch.io/cgdd4303-concrete-formwork-simulator)",
       projTagline: "Unity 3D Educational Game",
       imgUrl: ConcreteBuilding1,
+      buttonLink: "https://ironlionm4n.itch.io/cgdd4303-concrete-formwork-simulator",
       projectInfo:
       [
         {
@@ -782,6 +786,7 @@ export const Projects = () => {
         + "variants. The game was developed as part of a team for my Senior project at KSU. "
         + "A playable version of Get Me Out can be found of my friends itch.io page, ironlionm4n (https://ironlionm4n.itch.io/gmo)",
       projTagline: "Unity 2D Platformer",
+      buttonLink: "https://ironlionm4n.itch.io/gmo",
       imgUrl: GMOStart,
       imageList: [
         {
