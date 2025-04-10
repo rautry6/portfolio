@@ -7,7 +7,7 @@ import MainControls from './MainControls.tsx'
 import React from 'react'
 
 import { useLocation } from 'react-router-dom';
-
+import { ProjectNavbar } from '../ProjectNavbar.js'
 type IProps = {
   name: string,
   description: string,
@@ -107,6 +107,7 @@ function Tracker() {
   return (
     <>
       <div>
+        <ProjectNavbar />
         <h1>{data.name}</h1>
         <h5 style={{ margin: "5%" }}>{data.description}</h5>
         <div style={{margin: "2%"}}>
