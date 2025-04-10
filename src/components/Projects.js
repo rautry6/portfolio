@@ -26,6 +26,7 @@ import { Idle, Dino1, Dino2, Dino3 } from "../assets/img/Projects/IdleDino";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { TrackerTable } from "../assets/img/Projects/Citizen Tracker/Index";
 
 export const Projects = () => {
 
@@ -850,6 +851,13 @@ export const Projects = () => {
   ];
 
   const frontEndProjects = [
+    {
+      title: "Citizen Tracker",
+      projDescription: "This is a React + Typescript Project made with a Nest.js backend service that keeps track of a list of citizens from a variety of countries. It includes info about each citizen like name, id, country of origin, and if they can travel internationally.",
+      imgUrl: TrackerTable,
+      nav: "portfolio/CitizenTracker",
+      projTagline: "Typescript + Next.js Application",
+    },
     {
       title: "Employee Polls",
       projDescription: "This is a simple react application created as part of my Udactiy React Nanodegree certification.\n "

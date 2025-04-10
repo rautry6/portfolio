@@ -1,0 +1,30 @@
+.Header {
+    color: aliceblue !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    font-size: larger !important;
+    background-color: rgb(53, 49, 49) !important
+}
+
+.Row{
+    color:rgb(248, 247, 245) !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: large !important;
+}
+
+.CanTravel{
+    color:greenyellow !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: large !important;
+    font-weight: bold !important;
+}
+
+.NoTravel{
+    color:red !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: large !important;
+    font-weight: bold !important;
+}
+
+.Table{
+    background-color: rgb(91, 90, 90) !important;
+}
