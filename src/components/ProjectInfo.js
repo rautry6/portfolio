@@ -20,8 +20,8 @@ export const ProjectInfo = (project) => {
                                 //console.log(subHeading),
                                 <div key={index}>
                                     <h2>{subHeading.headerName}</h2>
-                                    <Row className="container">
-                                        <Col s lg={6}>
+                                    <Row>
+                                        <Col xs={12} lg={6}>
                                             {subHeading.textBlurb?.map((paragraph, index) => (
                                                 <p key={index}>{paragraph}</p>
                                             ))}
@@ -30,7 +30,7 @@ export const ProjectInfo = (project) => {
                                             ))
                                             }
                                         </Col>
-                                        <Col s={6} lg>
+                                        <Col xs={12} lg={6}>
                                             {subHeading.videos?.map((video, index) => (
                                                 <div>
                                                 <p></p>

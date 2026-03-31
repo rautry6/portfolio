@@ -5,7 +5,7 @@ export const ProjectCard = ({ title, projDescription, projectInfo, projTagline, 
   console.log( title)
   return (
 
-    <Col size={12} sm={6} md={4}>
+    <Col xs={12} sm={6} md={6} lg={4} xl={4} xxl={3}>
       {nav === "" ? ( <NavLink to= "project" state={{
       name: title,
       description: projDescription, 

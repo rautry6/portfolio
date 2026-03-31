@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export const ImageCard = ({ image, imageTitle }) => {
   return (
 
-    <Col size={12} sm={6} md={4}>
+    <Col xs={12} sm={6} md={6} lg={4} xl={4} xxl={3}>
 
       <div className="proj-imgbx">
         <img src={image} />
