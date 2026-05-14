@@ -649,6 +649,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
+.email-button {
+  font-size: clamp(0.875rem, 3.5vw, 3rem);
+  font-weight: 800;
+  color: var(--text-white);
+  background: transparent;
+  border: 3px solid var(--text-white);
+  padding: 20px;
+  cursor: pointer;
+}
+.email-button:hover {
+  text-decoration: underline;
+}
 
 /************ Footer Css ************/
 .footer {

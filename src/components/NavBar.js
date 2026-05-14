@@ -6,6 +6,7 @@ import navIcon2 from '../assets/img/github_icon1.png';
 import navIcon3 from '../assets/img/itch-io-icon.png';
 import { HashLink } from 'react-router-hash-link';
 import Resume from '../assets/resume/resume.pdf'
+import { handleEmailClicked } from "../functions/email";
 
 export const NavBar = () => {
 
@@ -50,7 +51,7 @@ export const NavBar = () => {
                 <a href="https://saneflipper.itch.io/" target="_blank"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
+                <button className="vvd" onClick={handleEmailClicked}><span>Let’s Connect</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
