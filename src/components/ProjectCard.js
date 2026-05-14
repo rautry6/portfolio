@@ -1,4 +1,5 @@
 import { Col } from "react-bootstrap";
+import './ProjectCard.css';
 import { NavLink } from "react-router-dom";
 
 export const ProjectCard = ({ title, projDescription, projectInfo, projTagline, imgUrl, imageList, buttonLink, nav }) => {

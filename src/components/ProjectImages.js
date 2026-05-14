@@ -1,4 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import './Projects.css';
 import { ImageCard } from "./ImageCard";
 
 export const ProjectImages = ({ images }) => {

@@ -1,4 +1,6 @@
 import { Container } from "react-bootstrap";
+import './Footer.css';
+import '../styles/shared.css';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github_icon1.png';
 import navIcon3 from '../assets/img/itch-io-icon.png';

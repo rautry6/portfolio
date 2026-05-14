@@ -1,5 +1,3 @@
-import '../App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./NavBar";
 import { Banner } from "./Banner";
 import { Skills } from "./Skills";

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './Banner.css';
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/computer-png.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';

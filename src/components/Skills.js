@@ -1,4 +1,5 @@
 import { skillsData } from '../data/skillsData';
+import './Skills.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"

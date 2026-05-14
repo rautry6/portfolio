@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import './Banner.css';
 
 export const ProjectBanner = ({ name, description, tagline, imageUrl, btLink }) => {
   return (

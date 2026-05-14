@@ -1,5 +1,3 @@
-import '../App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { ProjectNavbar } from "./ProjectNavbar";
 import { ProjectBanner } from "./ProjectBanner";
 import { ProjectImages } from './ProjectImages';
