@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.25432f65.css",
-    "main.js": "/portfolio/static/js/main.241c6865.js",
+    "main.css": "/portfolio/static/css/main.3c85be1f.css",
+    "main.js": "/portfolio/static/js/main.2bd81033.js",
     "reactPlayerYouTube.js": "/portfolio/static/js/reactPlayerYouTube.27cd2ae3.chunk.js",
     "reactPlayerSoundCloud.js": "/portfolio/static/js/reactPlayerSoundCloud.19b1b7e4.chunk.js",
     "reactPlayerVimeo.js": "/portfolio/static/js/reactPlayerVimeo.acc2fd27.chunk.js",
@@ -92,7 +92,7 @@
     "static/media/level4.jpg": "/portfolio/static/media/level4.71d2b8b24ab6d6be7167.jpg",
     "static/media/ReadsSearch.jpg": "/portfolio/static/media/ReadsSearch.64c01f7423d7b45715e0.jpg",
     "static/media/chibatutorial.png": "/portfolio/static/media/chibatutorial.89bcf7e4215a3d533f2d.png",
-    "static/media/header-img.svg": "/portfolio/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.60312b974f744282a79c.pdf",
     "static/media/computer-png.png": "/portfolio/static/media/computer-png.53ea7fc6f3422d8638c3.png",
     "static/media/customization.png": "/portfolio/static/media/customization.726c59d429f31b8ec2b5.png",
     "static/media/ReadsShelves.jpg": "/portfolio/static/media/ReadsShelves.ee6c7b1109c5cc889137.jpg",
@@ -143,8 +143,8 @@
     "static/media/nav-icon1.svg": "/portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/arrow2.svg": "/portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
-    "main.25432f65.css.map": "/portfolio/static/css/main.25432f65.css.map",
-    "main.241c6865.js.map": "/portfolio/static/js/main.241c6865.js.map",
+    "main.3c85be1f.css.map": "/portfolio/static/css/main.3c85be1f.css.map",
+    "main.2bd81033.js.map": "/portfolio/static/js/main.2bd81033.js.map",
     "reactPlayerYouTube.27cd2ae3.chunk.js.map": "/portfolio/static/js/reactPlayerYouTube.27cd2ae3.chunk.js.map",
     "reactPlayerSoundCloud.19b1b7e4.chunk.js.map": "/portfolio/static/js/reactPlayerSoundCloud.19b1b7e4.chunk.js.map",
     "reactPlayerVimeo.acc2fd27.chunk.js.map": "/portfolio/static/js/reactPlayerVimeo.acc2fd27.chunk.js.map",
@@ -162,7 +162,7 @@
     "787.fb771931.chunk.js.map": "/portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25432f65.css",
-    "static/js/main.241c6865.js"
+    "static/css/main.3c85be1f.css",
+    "static/js/main.2bd81033.js"
   ]
 }
