@@ -1,4 +1,4 @@
-import { NavBar } from "./NavBar";
+import { NavBar } from "./Navbar/NavBar";
 import { Banner } from "./Banner";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
@@ -16,4 +16,4 @@ export const MainPage = () => {
       <Footer />
     </div>
   );
-}
+};
