@@ -1,3 +1,3 @@
 export const handleEmailClicked = () => {
-        window.location.href = "mailto:reidautry02@gmail.com";
+    window.open("mailto:reidautry02@gmail.com", "_blank", "noopener,noreferrer")
 }
