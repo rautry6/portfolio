@@ -1,15 +1,14 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ImageCard } from "./ImageCard";
-import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const ProjectImages = ({ images }) => {
   return (
-    <section className="project" id="images">
+    <section className="project" id="images" style={{ overflow: 'hidden' }}>
       <Container>
         <Row>
           <Col size={12}>
             <h2>Project Images</h2>
-            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+            <Tab.Container id="project-images-tabs" defaultActiveKey="first">
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                 <Nav.Item>
                   <Nav.Link eventKey="first">Gameplay</Nav.Link>
@@ -28,7 +27,6 @@ export const ProjectImages = ({ images }) => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt="" />
     </section>
   );
 }
