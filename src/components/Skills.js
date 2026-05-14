@@ -1,8 +1,6 @@
 import { skillsData } from '../data/skillsData';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -35,9 +33,8 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>I have learned different programming languages ​​so far and as far as my skills are concerned<br></br></p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <h2 style={{padding: "2vh"}}>Skills</h2>
+                        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000} pauseOnHover={true} className="owl-carousel owl-theme skill-slider">
                             {skillsData.map(({ icon, label }) => (
                               <div key={label} className="item">
                                 <img src={icon} alt={`${label} icon`} />
