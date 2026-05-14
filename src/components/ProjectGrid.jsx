@@ -4,7 +4,7 @@ import { ProjectCard } from './ProjectCard';
 import { ProjectDataShape } from '../data/projectDataShape';
 
 export const ProjectGrid = ({ projects }) => (
-  <Row>
+  <Row style={{justifyContent:'center'}}>
     {projects.map((project) => (
       <ProjectCard key={project.title} {...project} />
     ))}
