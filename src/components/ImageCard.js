@@ -7,7 +7,7 @@ export const ImageCard = ({ image, imageTitle }) => {
     <Col xs={12} sm={6} md={6} lg={4} xl={4} xxl={3}>
 
       <div className="proj-imgbx">
-        <img src={image} />
+        <img src={image} alt={imageTitle} />
         <div className="proj-txtx">
         <span style= {{color : "white"}}>{imageTitle}</span>
         </div>

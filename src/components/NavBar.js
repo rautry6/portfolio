@@ -5,9 +5,6 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github_icon1.png';
 import navIcon3 from '../assets/img/itch-io-icon.png';
 import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
 
 export const NavBar = () => {
 
