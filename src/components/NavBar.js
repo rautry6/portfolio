@@ -5,6 +5,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github_icon1.png';
 import navIcon3 from '../assets/img/itch-io-icon.png';
 import { HashLink } from 'react-router-hash-link';
+import Resume from '../assets/resume/resume.pdf'
 
 export const NavBar = () => {
 
@@ -40,6 +41,7 @@ export const NavBar = () => {
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href={Resume} target="_blank" rel="noreferrer" className="navbar-link" onClick={() => onUpdateActiveLink('resume')}>Resume</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
