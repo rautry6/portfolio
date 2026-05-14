@@ -1,68 +1,74 @@
 .banner {
-  margin-top: 0;
-  padding: 16rem 0 6rem 0;
-  background-image: url('../assets/img/banner-bg.png');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+    margin-top: 0;
+    padding: 16rem 0 6rem 0;
+    background-image: url('../assets/img/banner-bg.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 .banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.05rem;
-  padding: 0.5rem 0.625rem;
-  background: var(--gradient-purple-semi-transparent);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    padding: 0.5rem 0.625rem;
+    background: var(--gradient-purple-semi-transparent);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    display: inline-block;
 }
 .banner h1 {
-  font-size: clamp(2.2rem, 8vw, 4rem);
-  font-weight: 700;
-  letter-spacing: 0.05rem;
-  line-height: 1.1;
-  margin-bottom: 1.25rem;
-  display: block;
+    font-size: clamp(2.2rem, 8vw, 4rem);
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+    display: block;
 }
 .banner p {
-  color: var(--text-muted);
-  font-size: 1.125rem;
-  letter-spacing: 0.05rem;
-  line-height: 1.5em;
-  width: 96%;
+    color: var(--text-muted);
+    font-size: 1.125rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5em;
+    width: 96%;
 }
 .banner button {
-  font-size: 60px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-  width: 100%;
-  color: gold;
+    font-size: 60px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+    width: 100%;
+    color: gold;
 }
 .banner button svg {
-  font-size: 1.5rem;
-  margin-left: 0.625rem;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
+    font-size: 1.5rem;
+    margin-left: 0.625rem;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
 }
 .banner button:hover svg {
-  margin-left: 1.5rem;
+    margin-left: 1.5rem;
 }
 .banner img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  animation: updown 3s linear infinite;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    animation: updown 3s linear infinite;
 }
 .banner a {
-  width: 100%;
+    width: 100%;
 }
 @keyframes updown {
-  0%   { transform: translateY(-20px); }
-  50%  { transform: translateY(20px); }
-  100% { transform: translateY(-20px); }
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
 }
 .txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
+    border-right: 0.08em solid #666;
 }

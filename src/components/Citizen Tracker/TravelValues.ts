@@ -1,4 +1,4 @@
 export enum Travel {
-    YES = "Yes",
-    NO = "No"
+    YES = 'Yes',
+    NO = 'No',
 }

@@ -1,39 +1,35 @@
-import { useForm, Path, SubmitHandler, UseFormRegister } from "react-hook-form"
-import React from "react"
+import { useForm, Path, SubmitHandler, UseFormRegister } from 'react-hook-form'
+import React from 'react'
 
 interface IFormInput {
-    ID : number
+    ID: number
 }
 
 type InputProps = {
-label: Path<IFormInput>
-register: UseFormRegister<IFormInput>
-required: boolean
+    label: Path<IFormInput>
+    register: UseFormRegister<IFormInput>
+    required: boolean
 }
-
 
 function Input({ label, register, required }: InputProps) {
-return (
-<>
-  <label>{label}</label>
-  <input {...register(label, { required })} />
-</>
-)
+    return (
+        <>
+            <label>{label}</label>
+            <input {...register(label, { required })} />
+        </>
+    )
 }
-
-
 
 interface IProps {
-    refetchTable : () => void,
-    deleteCitizen : (id : number) => void
+    refetchTable: () => void
+    deleteCitizen: (id: number) => void
 }
 
-function DeleteUser( { refetchTable, deleteCitizen }: IProps){
+function DeleteUser({ refetchTable, deleteCitizen }: IProps) {
+    const { register, handleSubmit } = useForm<IFormInput>()
+    const onSubmit: SubmitHandler<IFormInput> = (data) => deleteCitizen(data.ID)
 
- const { register, handleSubmit } = useForm<IFormInput>()
-  const onSubmit: SubmitHandler<IFormInput> = (data) => deleteCitizen(data.ID)
-
-  /*const deleteCitizen = async (id : IFormInput) => {
+    /*const deleteCitizen = async (id : IFormInput) => {
     try{
 
         const payload = id.ID
@@ -48,16 +44,15 @@ function DeleteUser( { refetchTable, deleteCitizen }: IProps){
     }
   } */
 
-    return(
+    return (
         <div>
-             <p>Delete Citizen</p>
+            <p>Delete Citizen</p>
             <form onSubmit={handleSubmit(onSubmit)}>
-            <Input label="ID" register={register} required />
+                <Input label="ID" register={register} required />
                 <input type="submit" />
             </form>
         </div>
     )
 }
 
-
-export default DeleteUser;
+export default DeleteUser

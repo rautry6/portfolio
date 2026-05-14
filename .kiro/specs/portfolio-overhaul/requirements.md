@@ -47,8 +47,8 @@ The portfolio currently has a working structure — a main page with NavBar, Ban
 1. THE Project_Registry SHALL export a structured object with named arrays per category (e.g., `gameProjects` and `frontEndProjects`) that the Projects_Component consumes, preserving the existing two-tab UI structure.
 2. THE Project_Registry SHALL be the single source of truth for all project data; no project data objects SHALL be defined inline inside any component file.
 3. EACH Project_Data_Module SHALL export a single default object that conforms to a shared `ProjectData` PropTypes shape (or TypeScript interface) with the following fields:
-   - **Required**: `title` (string), `projTagline` (string), `projDescription` (string), `imgUrl` (image asset)
-   - **Optional**: `imageList` (array of `{ image, imageTitle }`), `buttonLink` (string URL), `projectInfo` (array of section objects), `nav` (string route override for non-standard navigation targets)
+    - **Required**: `title` (string), `projTagline` (string), `projDescription` (string), `imgUrl` (image asset)
+    - **Optional**: `imageList` (array of `{ image, imageTitle }`), `buttonLink` (string URL), `projectInfo` (array of section objects), `nav` (string route override for non-standard navigation targets)
 4. THE Projects_Component SHALL import all project data exclusively from the Project_Registry; no inline project data objects SHALL exist in `Projects.js`, `ProjectCard.js`, or any component that renders project cards.
 5. WHEN the Project_Registry module is imported in a TypeScript-aware environment, THE compiler SHALL report a type error if a Project_Data_Module is missing any required field, catching omissions at build time rather than at runtime.
 

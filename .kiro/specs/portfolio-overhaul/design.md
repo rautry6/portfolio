@@ -83,19 +83,20 @@ A new, pure presentational component. Receives an array of `ProjectData` objects
 ```jsx
 // src/components/ProjectGrid.jsx
 export const ProjectGrid = ({ projects }) => (
-  <Row>
-    {projects.map((project) => (
-      <ProjectCard key={project.title} {...project} />
-    ))}
-  </Row>
-);
+    <Row>
+        {projects.map((project) => (
+            <ProjectCard key={project.title} {...project} />
+        ))}
+    </Row>
+)
 
 ProjectGrid.propTypes = {
-  projects: PropTypes.arrayOf(ProjectDataShape).isRequired,
-};
+    projects: PropTypes.arrayOf(ProjectDataShape).isRequired,
+}
 ```
 
 Key decisions:
+
 - `key={project.title}` — stable, unique identifier from data (satisfies Req 4.2).
 - No state, no effects — purely derived from props.
 
@@ -105,18 +106,18 @@ Responsible only for tab/category state and composing tabs with `ProjectGrid`. I
 
 ```jsx
 // src/components/Projects.jsx
-import { gameProjects, frontEndProjects } from "../data/projectRegistry";
-import { ProjectGrid } from "./ProjectGrid";
+import { gameProjects, frontEndProjects } from '../data/projectRegistry'
+import { ProjectGrid } from './ProjectGrid'
 
 export const Projects = () => {
-  return (
-    <section className="project" id="projects">
-      {/* Tab.Container with two Nav.Links */}
-      {/* Tab.Pane "first"  → <ProjectGrid projects={gameProjects} /> */}
-      {/* Tab.Pane "second" → <ProjectGrid projects={frontEndProjects} /> */}
-    </section>
-  );
-};
+    return (
+        <section className="project" id="projects">
+            {/* Tab.Container with two Nav.Links */}
+            {/* Tab.Pane "first"  → <ProjectGrid projects={gameProjects} /> */}
+            {/* Tab.Pane "second" → <ProjectGrid projects={frontEndProjects} /> */}
+        </section>
+    )
+}
 ```
 
 ### ProjectCard (updated)
@@ -124,23 +125,42 @@ export const Projects = () => {
 Remove `console.log`. Add `alt` text to `<img>`. The `nav` prop routing logic is preserved but cleaned up.
 
 ```jsx
-export const ProjectCard = ({ title, projDescription, projectInfo, projTagline, imgUrl, imageList, buttonLink, nav }) => {
-  const destination = nav ?? "project";
-  return (
-    <Col xs={12} sm={6} md={6} lg={4} xl={4} xxl={3}>
-      <NavLink to={destination} state={{ name: title, description: projDescription, projInfo: projectInfo,
-          tagline: projTagline, images: imageList, imageUrl: imgUrl, btLink: buttonLink }}>
-        <div className="proj-imgbx">
-          <img src={imgUrl} alt={`${title} thumbnail`} />
-          <div className="proj-txtx">
-            <h4 style={{ color: "white" }}>{title}</h4>
-            <span style={{ color: "white" }}>{projTagline}</span>
-          </div>
-        </div>
-      </NavLink>
-    </Col>
-  );
-};
+export const ProjectCard = ({
+    title,
+    projDescription,
+    projectInfo,
+    projTagline,
+    imgUrl,
+    imageList,
+    buttonLink,
+    nav,
+}) => {
+    const destination = nav ?? 'project'
+    return (
+        <Col xs={12} sm={6} md={6} lg={4} xl={4} xxl={3}>
+            <NavLink
+                to={destination}
+                state={{
+                    name: title,
+                    description: projDescription,
+                    projInfo: projectInfo,
+                    tagline: projTagline,
+                    images: imageList,
+                    imageUrl: imgUrl,
+                    btLink: buttonLink,
+                }}
+            >
+                <div className="proj-imgbx">
+                    <img src={imgUrl} alt={`${title} thumbnail`} />
+                    <div className="proj-txtx">
+                        <h4 style={{ color: 'white' }}>{title}</h4>
+                        <span style={{ color: 'white' }}>{projTagline}</span>
+                    </div>
+                </div>
+            </NavLink>
+        </Col>
+    )
+}
 ```
 
 ### ProjectPage (updated)
@@ -149,17 +169,24 @@ Destructures `location.state` at the top of the component and passes explicit na
 
 ```jsx
 export const ProjectPage = () => {
-  const { name, description, tagline, images, imageUrl, btLink, projInfo } = useLocation().state ?? {};
-  return (
-    <div className="App">
-      <ProjectNavbar />
-      <ProjectBanner name={name} description={description} tagline={tagline} imageUrl={imageUrl} btLink={btLink} />
-      <ProjectInfo projInfo={projInfo} />
-      <ProjectImages images={images} />
-      <Footer />
-    </div>
-  );
-};
+    const { name, description, tagline, images, imageUrl, btLink, projInfo } =
+        useLocation().state ?? {}
+    return (
+        <div className="App">
+            <ProjectNavbar />
+            <ProjectBanner
+                name={name}
+                description={description}
+                tagline={tagline}
+                imageUrl={imageUrl}
+                btLink={btLink}
+            />
+            <ProjectInfo projInfo={projInfo} />
+            <ProjectImages images={images} />
+            <Footer />
+        </div>
+    )
+}
 ```
 
 Child component signatures become:
@@ -176,20 +203,20 @@ Imports from `skillsData.js` and maps over the array instead of hardcoding JSX i
 
 ```jsx
 // src/components/Skills.jsx
-import { skillsData } from "../data/skillsData";
+import { skillsData } from '../data/skillsData'
 
 export const Skills = () => (
-  <section className="skill" id="skills">
-    <Carousel responsive={responsive} infinite={true} className="...">
-      {skillsData.map(({ icon, label }) => (
-        <div key={label} className="item">
-          <img src={icon} alt={`${label} icon`} />
-          <h5>{label}</h5>
-        </div>
-      ))}
-    </Carousel>
-  </section>
-);
+    <section className="skill" id="skills">
+        <Carousel responsive={responsive} infinite={true} className="...">
+            {skillsData.map(({ icon, label }) => (
+                <div key={label} className="item">
+                    <img src={icon} alt={`${label} icon`} />
+                    <h5>{label}</h5>
+                </div>
+            ))}
+        </Carousel>
+    </section>
+)
 ```
 
 ### Banner (updated)
@@ -198,16 +225,16 @@ Move `toRotate` to module scope. Fix the missing `text` and `loopNum` dependenci
 
 ```jsx
 // Module scope — not re-created on every render (Req 3.3)
-const TO_ROTATE = ["Game Developer", "Game Designer", "Front-End Developer"];
+const TO_ROTATE = ['Game Developer', 'Game Designer', 'Front-End Developer']
 
 export const Banner = () => {
-  // ...
-  useEffect(() => {
-    const ticker = setInterval(tick, delta);
-    return () => clearInterval(ticker);
-  }, [text, delta]); // exhaustive deps (Req 4.6)
-  // ...
-};
+    // ...
+    useEffect(() => {
+        const ticker = setInterval(tick, delta)
+        return () => clearInterval(ticker)
+    }, [text, delta]) // exhaustive deps (Req 4.6)
+    // ...
+}
 ```
 
 ---
@@ -220,39 +247,39 @@ Defined once in `src/data/projectDataShape.js` (or `projectDataShape.ts` if the 
 
 ```js
 // src/data/projectDataShape.js
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 
 export const ImageItemShape = PropTypes.shape({
-  image: PropTypes.any.isRequired,   // imported asset
-  imageTitle: PropTypes.string.isRequired,
-});
+    image: PropTypes.any.isRequired, // imported asset
+    imageTitle: PropTypes.string.isRequired,
+})
 
 export const SubheadingShape = PropTypes.shape({
-  headerName: PropTypes.string.isRequired,
-  textBlurb: PropTypes.arrayOf(PropTypes.string),
-  listItems: PropTypes.arrayOf(PropTypes.string),
-  videos: PropTypes.arrayOf(PropTypes.any),
-});
+    headerName: PropTypes.string.isRequired,
+    textBlurb: PropTypes.arrayOf(PropTypes.string),
+    listItems: PropTypes.arrayOf(PropTypes.string),
+    videos: PropTypes.arrayOf(PropTypes.any),
+})
 
 export const ProjectInfoSectionShape = PropTypes.shape({
-  headerName: PropTypes.string.isRequired,
-  listItems: PropTypes.arrayOf(PropTypes.string),
-  subheadings: PropTypes.arrayOf(SubheadingShape),
-});
+    headerName: PropTypes.string.isRequired,
+    listItems: PropTypes.arrayOf(PropTypes.string),
+    subheadings: PropTypes.arrayOf(SubheadingShape),
+})
 
 // The canonical shape every Project_Data_Module must satisfy
 export const ProjectDataShape = PropTypes.shape({
-  // Required
-  title:           PropTypes.string.isRequired,
-  projTagline:     PropTypes.string.isRequired,
-  projDescription: PropTypes.string.isRequired,
-  imgUrl:          PropTypes.any.isRequired,
-  // Optional
-  imageList:   PropTypes.arrayOf(ImageItemShape),
-  buttonLink:  PropTypes.string,
-  projectInfo: PropTypes.arrayOf(ProjectInfoSectionShape),
-  nav:         PropTypes.string,
-});
+    // Required
+    title: PropTypes.string.isRequired,
+    projTagline: PropTypes.string.isRequired,
+    projDescription: PropTypes.string.isRequired,
+    imgUrl: PropTypes.any.isRequired,
+    // Optional
+    imageList: PropTypes.arrayOf(ImageItemShape),
+    buttonLink: PropTypes.string,
+    projectInfo: PropTypes.arrayOf(ProjectInfoSectionShape),
+    nav: PropTypes.string,
+})
 ```
 
 TypeScript equivalent (for compile-time enforcement, Req 2.5):
@@ -260,34 +287,34 @@ TypeScript equivalent (for compile-time enforcement, Req 2.5):
 ```ts
 // src/data/projectDataShape.ts
 export interface ImageItem {
-  image: string;
-  imageTitle: string;
+    image: string
+    imageTitle: string
 }
 
 export interface Subheading {
-  headerName: string;
-  textBlurb?: string[];
-  listItems?: string[];
-  videos?: string[];
+    headerName: string
+    textBlurb?: string[]
+    listItems?: string[]
+    videos?: string[]
 }
 
 export interface ProjectInfoSection {
-  headerName: string;
-  listItems?: string[];
-  subheadings?: Subheading[];
+    headerName: string
+    listItems?: string[]
+    subheadings?: Subheading[]
 }
 
 export interface ProjectData {
-  // Required
-  title: string;
-  projTagline: string;
-  projDescription: string;
-  imgUrl: string;
-  // Optional
-  imageList?: ImageItem[];
-  buttonLink?: string;
-  projectInfo?: ProjectInfoSection[];
-  nav?: string;
+    // Required
+    title: string
+    projTagline: string
+    projDescription: string
+    imgUrl: string
+    // Optional
+    imageList?: ImageItem[]
+    buttonLink?: string
+    projectInfo?: ProjectInfoSection[]
+    nav?: string
 }
 ```
 
@@ -334,60 +361,56 @@ export default CoinKnight;
  */
 
 // --- Project imports ---
-import CorporationInc  from "./projects/CorporationInc";
-import IdleDino        from "./projects/IdleDino";
-import CoinKnight      from "./projects/CoinKnight";
-import Chiba           from "./projects/Chiba";
-import ConcreteFormwork from "./projects/ConcreteFormwork";
-import IllusionOfWeight from "./projects/IllusionOfWeight";
-import GetMeOut        from "./projects/GetMeOut";
-import JelloFellos     from "./projects/JelloFellos";
-import CitizenTracker  from "./projects/CitizenTracker";
-import EmployeePolls   from "./projects/EmployeePolls";
-import MyReads         from "./projects/MyReads";
+import CorporationInc from './projects/CorporationInc'
+import IdleDino from './projects/IdleDino'
+import CoinKnight from './projects/CoinKnight'
+import Chiba from './projects/Chiba'
+import ConcreteFormwork from './projects/ConcreteFormwork'
+import IllusionOfWeight from './projects/IllusionOfWeight'
+import GetMeOut from './projects/GetMeOut'
+import JelloFellos from './projects/JelloFellos'
+import CitizenTracker from './projects/CitizenTracker'
+import EmployeePolls from './projects/EmployeePolls'
+import MyReads from './projects/MyReads'
 
 export const gameProjects = [
-  CorporationInc,
-  IdleDino,
-  CoinKnight,
-  Chiba,
-  ConcreteFormwork,
-  IllusionOfWeight,
-  GetMeOut,
-  JelloFellos,
-];
+    CorporationInc,
+    IdleDino,
+    CoinKnight,
+    Chiba,
+    ConcreteFormwork,
+    IllusionOfWeight,
+    GetMeOut,
+    JelloFellos,
+]
 
-export const frontEndProjects = [
-  CitizenTracker,
-  EmployeePolls,
-  MyReads,
-];
+export const frontEndProjects = [CitizenTracker, EmployeePolls, MyReads]
 ```
 
 ### skillsData structure
 
 ```js
 // src/data/skillsData.js
-import reactIcon    from "../assets/img/React-icon.png";
-import csharp       from "../assets/img/csharp-icon.png";
-import unity        from "../assets/img/unity-icon.png";
-import gamedesign   from "../assets/img/game-design.png";
-import uiux         from "../assets/img/uiuxicon.png";
-import word         from "../assets/img/word-icon.png";
-import excel        from "../assets/img/excel-icon.png";
-import powerpoint   from "../assets/img/powerpoint-icon.png";
+import reactIcon from '../assets/img/React-icon.png'
+import csharp from '../assets/img/csharp-icon.png'
+import unity from '../assets/img/unity-icon.png'
+import gamedesign from '../assets/img/game-design.png'
+import uiux from '../assets/img/uiuxicon.png'
+import word from '../assets/img/word-icon.png'
+import excel from '../assets/img/excel-icon.png'
+import powerpoint from '../assets/img/powerpoint-icon.png'
 
 export const skillsData = [
-  { icon: reactIcon,   label: "React" },
-  { icon: unity,       label: "Unity Game Engine" },
-  { icon: csharp,      label: "C#" },
-  { icon: reactIcon,   label: "React Native" },
-  { icon: gamedesign,  label: "Game Design" },
-  { icon: uiux,        label: "UI/UX Design" },
-  { icon: word,        label: "Word Certified" },
-  { icon: excel,       label: "Excel Certified" },
-  { icon: powerpoint,  label: "PowerPoint Certified" },
-];
+    { icon: reactIcon, label: 'React' },
+    { icon: unity, label: 'Unity Game Engine' },
+    { icon: csharp, label: 'C#' },
+    { icon: reactIcon, label: 'React Native' },
+    { icon: gamedesign, label: 'Game Design' },
+    { icon: uiux, label: 'UI/UX Design' },
+    { icon: word, label: 'Word Certified' },
+    { icon: excel, label: 'Excel Certified' },
+    { icon: powerpoint, label: 'PowerPoint Certified' },
+]
 ```
 
 ---
@@ -398,11 +421,11 @@ The project already has react-router-dom v6.3.0 installed and `App.js` already u
 
 The three routes are preserved exactly:
 
-| Path | Component |
-|---|---|
-| `portfolio/` | `MainPage` |
-| `portfolio/project/` | `ProjectPage` |
-| `portfolio/CitizenTracker` | `Tracker` |
+| Path                       | Component     |
+| -------------------------- | ------------- |
+| `portfolio/`               | `MainPage`    |
+| `portfolio/project/`       | `ProjectPage` |
+| `portfolio/CitizenTracker` | `Tracker`     |
 
 The only routing-related change is in `ProjectCard`: the hardcoded `"CitizenTracker"` string in the `nav !== ""` branch is replaced by using the `nav` prop value directly (which is already `"portfolio/CitizenTracker"` in the CitizenTracker data module). This removes the special-case branch entirely:
 
@@ -421,16 +444,16 @@ The `Banner.js` file imports `BrowserRouter as Router` but never uses it — thi
 
 Based on a review of `package.json` and the source files:
 
-| Package | Action | Reason |
-|---|---|---|
-| `react` | Keep at `^18.1.0` | Already React 18 (Req 1.4 satisfied) |
-| `react-dom` | Keep at `^18.1.0` | Matches React version |
-| `react-router-dom` | Keep at `^6.3.0` | Already v6 (Req 1.5 satisfied) |
-| `react-scripts` | Keep at `5.0.1` | CRA toolchain; major update to v6 is out of scope |
-| `cors`, `express`, `nodemailer` | Audit | Used in `server.js` (backend email handler); keep if server.js is deployed, otherwise remove |
-| `react-mailchimp-subscribe` | Audit | Check if used in Contact or Newsletter components |
-| `typescript` | Keep | Used for `Tracker.tsx` |
-| All others | Keep | Actively used in components |
+| Package                         | Action            | Reason                                                                                       |
+| ------------------------------- | ----------------- | -------------------------------------------------------------------------------------------- |
+| `react`                         | Keep at `^18.1.0` | Already React 18 (Req 1.4 satisfied)                                                         |
+| `react-dom`                     | Keep at `^18.1.0` | Matches React version                                                                        |
+| `react-router-dom`              | Keep at `^6.3.0`  | Already v6 (Req 1.5 satisfied)                                                               |
+| `react-scripts`                 | Keep at `5.0.1`   | CRA toolchain; major update to v6 is out of scope                                            |
+| `cors`, `express`, `nodemailer` | Audit             | Used in `server.js` (backend email handler); keep if server.js is deployed, otherwise remove |
+| `react-mailchimp-subscribe`     | Audit             | Check if used in Contact or Newsletter components                                            |
+| `typescript`                    | Keep              | Used for `Tracker.tsx`                                                                       |
+| All others                      | Keep              | Actively used in components                                                                  |
 
 The full dead-dependency audit (step 1 of the migration) will grep each package name against `src/` imports and flag any with zero references.
 
@@ -441,12 +464,14 @@ The full dead-dependency audit (step 1 of the migration) will grep each package 
 The refactor is ordered to keep the app buildable and visually identical at every step. Each phase can be committed independently.
 
 ### Phase 1 — Dependency Audit (no visual change)
+
 1. Run `npm outdated` and cross-reference with requirements.
 2. Grep each package in `package.json` against `src/` to identify dead dependencies.
 3. Remove confirmed dead dependencies; add `// TODO:` comments on any that cannot be updated.
 4. Run `npm run build` to verify clean build.
 
 ### Phase 2 — Data Layer (no visual change)
+
 1. Create `src/data/` directory.
 2. Create `src/data/projectDataShape.js` with PropTypes definitions.
 3. Create one `Project_Data_Module` per project by extracting the inline data objects and their asset imports from `Projects.js`.
@@ -456,6 +481,7 @@ The refactor is ordered to keep the app buildable and visually identical at ever
 7. Run `npm run build` — `Projects.js` still uses its own inline data at this point, so nothing breaks.
 
 ### Phase 3 — Component Split (visual parity required)
+
 1. Create `src/components/ProjectGrid.jsx` using data from the registry.
 2. Refactor `Projects.js` to import from `projectRegistry.js` and use `ProjectGrid`. Remove all inline data and asset imports.
 3. Update `Skills.js` to import from `skillsData.js`.
@@ -463,11 +489,13 @@ The refactor is ordered to keep the app buildable and visually identical at ever
 5. Run `npm run build` and visually verify the main page.
 
 ### Phase 4 — ProjectPage Props (visual parity required)
+
 1. Update `ProjectPage.js` to destructure `location.state` and pass explicit props.
 2. Update `ProjectBanner`, `ProjectInfo`, `ProjectImages` signatures to accept named props.
 3. Run `npm run build` and navigate to a project detail page to verify.
 
 ### Phase 5 — Code Quality Pass
+
 1. Remove all `console.log` calls from component files.
 2. Add `alt` attributes to all `<img>` elements.
 3. Replace index-based `key` props with `project.title` (or equivalent stable id).
@@ -480,35 +508,35 @@ The refactor is ordered to keep the app buildable and visually identical at ever
 
 ## Correctness Properties
 
-*A property is a characteristic or behavior that should hold true across all valid executions of a system — essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees.*
+_A property is a characteristic or behavior that should hold true across all valid executions of a system — essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees._
 
 ### Property 1: All registry entries conform to the ProjectData shape
 
-*For any* project data object exported from a module in `src/data/projects/` and registered in `projectRegistry.js`, the object must have all required fields (`title`, `projTagline`, `projDescription`, `imgUrl`) present and of the correct type.
+_For any_ project data object exported from a module in `src/data/projects/` and registered in `projectRegistry.js`, the object must have all required fields (`title`, `projTagline`, `projDescription`, `imgUrl`) present and of the correct type.
 
 **Validates: Requirements 2.3**
 
 ### Property 2: Registry-driven rendering — any valid project appears in the grid
 
-*For any* valid `ProjectData` object added to the `gameProjects` array in the registry, rendering the `Projects` component should produce a `ProjectCard` whose title matches that project's `title` field, without any modification to `Projects.js`, `ProjectCard.js`, or `ProjectPage.js`.
+_For any_ valid `ProjectData` object added to the `gameProjects` array in the registry, rendering the `Projects` component should produce a `ProjectCard` whose title matches that project's `title` field, without any modification to `Projects.js`, `ProjectCard.js`, or `ProjectPage.js`.
 
 **Validates: Requirements 2.2, 5.2**
 
 ### Property 3: Stable keys — no index-based keys in project lists
 
-*For any* array of project data objects passed to `ProjectGrid`, every rendered `ProjectCard` must have a `key` prop equal to `project.title`, and no two cards in the same list may share the same key.
+_For any_ array of project data objects passed to `ProjectGrid`, every rendered `ProjectCard` must have a `key` prop equal to `project.title`, and no two cards in the same list may share the same key.
 
 **Validates: Requirements 4.2**
 
 ### Property 4: Explicit props round-trip — ProjectPage children render correctly for any project
 
-*For any* valid `ProjectData` object, passing its fields as explicit named props to `ProjectBanner`, `ProjectInfo`, and `ProjectImages` must render the same visible output as the previous approach of passing the whole `location.state` object.
+_For any_ valid `ProjectData` object, passing its fields as explicit named props to `ProjectBanner`, `ProjectInfo`, and `ProjectImages` must render the same visible output as the previous approach of passing the whole `location.state` object.
 
 **Validates: Requirements 4.7**
 
 ### Property 5: Image alt text — all informational images have non-empty alt attributes
 
-*For any* `ProjectData` object rendered through `ProjectCard` or `ProjectBanner`, every `<img>` element that displays project-specific content must have a non-empty `alt` attribute.
+_For any_ `ProjectData` object rendered through `ProjectCard` or `ProjectBanner`, every `<img>` element that displays project-specific content must have a non-empty `alt` attribute.
 
 **Validates: Requirements 4.4**
 
@@ -531,26 +559,28 @@ The refactor is ordered to keep the app buildable and visually identical at ever
 This feature is primarily a structural refactor. The testing approach is:
 
 **Static analysis (smoke checks)**:
+
 - `npm run build` exits 0 after each phase — the primary regression gate.
 - ESLint with `react-hooks/exhaustive-deps` rule: zero violations after Phase 5.
 - Grep for banned patterns: `console.log` in `src/components/`, `class.*extends.*Component` in `src/`, v5 router APIs (`Switch`, `useHistory`, `Redirect`).
 - Grep for dead dependencies: each package in `package.json` has at least one `import`/`require` reference under `src/`.
 
 **Example-based unit tests**:
+
 - Import `projectRegistry.js` and assert it exports `gameProjects` and `frontEndProjects` as non-empty arrays.
 - Render `App` with `MemoryRouter` at each of the three paths and assert the correct top-level component is mounted (preserves Req 3.5).
 
 **Property-based tests** (using a library such as `fast-check`):
 
-*Property 1 — Schema conformance*: Iterate every entry in `[...gameProjects, ...frontEndProjects]` and assert each has `title` (string), `projTagline` (string), `projDescription` (string), and `imgUrl` (truthy). This is effectively a property over the set of all registered projects.
+_Property 1 — Schema conformance_: Iterate every entry in `[...gameProjects, ...frontEndProjects]` and assert each has `title` (string), `projTagline` (string), `projDescription` (string), and `imgUrl` (truthy). This is effectively a property over the set of all registered projects.
 
-*Property 2 — Registry-driven rendering*: Use `fast-check` to generate arbitrary `ProjectData` objects (with required fields), inject them into a test registry, render `Projects`, and assert a card with the matching title is present. Minimum 100 iterations.
+_Property 2 — Registry-driven rendering_: Use `fast-check` to generate arbitrary `ProjectData` objects (with required fields), inject them into a test registry, render `Projects`, and assert a card with the matching title is present. Minimum 100 iterations.
 
-*Property 3 — Stable keys*: Generate arrays of `ProjectData` objects with unique titles, render `ProjectGrid`, and assert no React key warning is emitted and each card's key equals its title. Minimum 100 iterations.
+_Property 3 — Stable keys_: Generate arrays of `ProjectData` objects with unique titles, render `ProjectGrid`, and assert no React key warning is emitted and each card's key equals its title. Minimum 100 iterations.
 
-*Property 4 — Explicit props round-trip*: Generate arbitrary `ProjectData` objects, render `ProjectBanner` / `ProjectInfo` / `ProjectImages` with explicit props, and assert the rendered output contains the expected title, tagline, and description strings. Minimum 100 iterations.
+_Property 4 — Explicit props round-trip_: Generate arbitrary `ProjectData` objects, render `ProjectBanner` / `ProjectInfo` / `ProjectImages` with explicit props, and assert the rendered output contains the expected title, tagline, and description strings. Minimum 100 iterations.
 
-*Property 5 — Alt text*: Generate arbitrary `ProjectData` objects, render `ProjectCard` and `ProjectBanner`, query all `<img>` elements, and assert none have an empty or missing `alt` attribute. Minimum 100 iterations.
+_Property 5 — Alt text_: Generate arbitrary `ProjectData` objects, render `ProjectCard` and `ProjectBanner`, query all `<img>` elements, and assert none have an empty or missing `alt` attribute. Minimum 100 iterations.
 
 **Tag format for property tests**: `// Feature: portfolio-overhaul, Property {N}: {property_text}`
 

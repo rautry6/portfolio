@@ -1,7 +1,7 @@
-import { Container, Row, Col } from "react-bootstrap";
-import './ProjectInfo.css';
-import ReactPlayer from "react-player";
-import { isMobile } from 'react-device-detect';
+import { Container, Row, Col } from 'react-bootstrap'
+import './ProjectInfo.css'
+import ReactPlayer from 'react-player'
+import { isMobile } from 'react-device-detect'
 
 export const ProjectInfo = ({ projInfo }) => {
     return (
@@ -21,7 +21,11 @@ export const ProjectInfo = ({ projInfo }) => {
                             <div key={subHeading.headerName} className="info-sub">
                                 <h3 className="info-sub-title">{subHeading.headerName}</h3>
                                 <Row>
-                                    <Col xs={12} lg={subHeading.videos?.length > 0 ? 5 : 12} className="info-sub-body">
+                                    <Col
+                                        xs={12}
+                                        lg={subHeading.videos?.length > 0 ? 5 : 12}
+                                        className="info-sub-body"
+                                    >
                                         {subHeading.textBlurb?.map((paragraph) => (
                                             <p key={paragraph}>{paragraph}</p>
                                         ))}
@@ -58,5 +62,5 @@ export const ProjectInfo = ({ projInfo }) => {
                 ))}
             </Container>
         </section>
-    );
+    )
 }

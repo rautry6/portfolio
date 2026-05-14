@@ -1,11 +1,11 @@
-import ChibaMenu from "./chibamenu.png"
-import ChibaTutorial from "./chibatutorial.png"
-import ChibaLevel1 from "./level1.png"
-import ChibaLevel2 from "./level2.png"
-import ChibaLevel3 from "./level3.png"
-import ChibaLevel4 from "./level4.jpg"
-import ChibaComplete from "./levelcomplete.png"
-import ChibaLevelSelect from "./levelselect.png"
+import ChibaMenu from './chibamenu.png'
+import ChibaTutorial from './chibatutorial.png'
+import ChibaLevel1 from './level1.png'
+import ChibaLevel2 from './level2.png'
+import ChibaLevel3 from './level3.png'
+import ChibaLevel4 from './level4.jpg'
+import ChibaComplete from './levelcomplete.png'
+import ChibaLevelSelect from './levelselect.png'
 
 export {
     ChibaComplete,
@@ -15,5 +15,5 @@ export {
     ChibaLevel4,
     ChibaLevelSelect,
     ChibaMenu,
-    ChibaTutorial
+    ChibaTutorial,
 }

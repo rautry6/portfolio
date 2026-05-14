@@ -12,31 +12,31 @@
  */
 
 // Project imports
-import CorporationInc from './projects/CorporationInc';
-import IdleDino from './projects/IdleDino';
-import CoinKnight from './projects/CoinKnight';
-import Chiba from './projects/Chiba';
-import ConcreteFormwork from './projects/ConcreteFormwork';
-import IllusionOfWeight from './projects/IllusionOfWeight';
-import GetMeOut from './projects/GetMeOut';
-import JelloFellos from './projects/JelloFellos';
-import CitizenTracker from './projects/CitizenTracker';
-import EmployeePolls from './projects/EmployeePolls';
-import MyReads from './projects/MyReads';
+import CorporationInc from './projects/CorporationInc'
+import IdleDino from './projects/IdleDino'
+import CoinKnight from './projects/CoinKnight'
+import Chiba from './projects/Chiba'
+import ConcreteFormwork from './projects/ConcreteFormwork'
+import IllusionOfWeight from './projects/IllusionOfWeight'
+import GetMeOut from './projects/GetMeOut'
+import JelloFellos from './projects/JelloFellos'
+import CitizenTracker from './projects/CitizenTracker'
+import EmployeePolls from './projects/EmployeePolls'
+import MyReads from './projects/MyReads'
 
 export const gameProjects = [
-  CorporationInc,
-  IdleDino,
-  CoinKnight,
-  Chiba,
-  ConcreteFormwork,
-  IllusionOfWeight,
-  GetMeOut,
-  JelloFellos,
-];
+    CorporationInc,
+    IdleDino,
+    CoinKnight,
+    Chiba,
+    ConcreteFormwork,
+    IllusionOfWeight,
+    GetMeOut,
+    JelloFellos,
+]
 
 export const frontEndProjects = [
-  // CitizenTracker,
-  EmployeePolls,
-  MyReads,
-];
+    // CitizenTracker,
+    EmployeePolls,
+    MyReads,
+]

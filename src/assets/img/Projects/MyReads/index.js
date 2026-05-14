@@ -1,9 +1,5 @@
-import ReadsShelves from "./ReadsShelves.jpg"
-import ReadsSearch from "./ReadsSearch.jpg"
-import ReadsNoResults from "./ReadsNoResults.jpg"
+import ReadsShelves from './ReadsShelves.jpg'
+import ReadsSearch from './ReadsSearch.jpg'
+import ReadsNoResults from './ReadsNoResults.jpg'
 
-export{
-    ReadsSearch,
-    ReadsShelves,
-    ReadsNoResults,
-}
+export { ReadsSearch, ReadsShelves, ReadsNoResults }
