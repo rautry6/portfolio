@@ -81,12 +81,6 @@ export const Banner = () => {
                                         double minor in Computer Science and Software Engineering. I
                                         am a Front-End Developer and a Game Developer/Designer.
                                     </p>
-
-                                    <HashLink to="#connect">
-                                        <button>
-                                            Let’s Connect <ArrowRightCircle size={25} />
-                                        </button>
-                                    </HashLink>
                                 </div>
                             )}
                         </TrackVisibility>

@@ -1,3 +1,4 @@
+import './ProjectPage.css'
 import { ProjectNavbar } from './Navbar/ProjectNavbar'
 import { ProjectBanner } from './ProjectBanner'
 import { ProjectImages } from './ProjectImages'
@@ -10,7 +11,7 @@ export const ProjectPage = () => {
         useLocation().state ?? {}
 
     return (
-        <div className="App">
+        <div className="project-page">
             <ProjectNavbar />
             <ProjectBanner
                 name={name}

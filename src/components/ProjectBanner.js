@@ -1,9 +1,9 @@
 import { Container, Row, Col } from 'react-bootstrap'
-import './Banner.css'
+import './ProjectBanner.css'
 
 export const ProjectBanner = ({ name, description, tagline, imageUrl, btLink }) => {
     return (
-        <section className="banner" id="description">
+        <section className="project-banner" id="description">
             <Container>
                 <Row className="aligh-items-center">
                     <Col xs={12} md={6} xl={7}>

@@ -16,6 +16,7 @@
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     padding: 0.375rem 0 0.375rem 0.875rem;
+    background: var(--gradient-purple);
     border-left: 3px solid #610c8c;
     margin-bottom: 1rem;
 }
@@ -26,23 +27,23 @@
     gap: 0.375rem 1.5rem;
     padding: 0.75rem 1rem;
     margin-bottom: 1.25rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgb(18, 17, 17);
     border-radius: 0.5rem;
 }
 .info-facts li {
     color: var(--text-muted);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 .info-sub {
     margin: 0.875rem 0;
     padding: 1rem 1.25rem;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgb(18, 17, 17);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0.5rem;
 }
 .info-sub-title {
-    font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+    font-size: clamp(0.95rem, 1.8vw, 1.8rem);
     font-weight: 600;
     font-style: italic;
     margin-bottom: 0.625rem;
@@ -50,7 +51,7 @@
 }
 .info-sub-body p {
     color: var(--text-muted);
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     line-height: 1.7;
     margin-bottom: 0.75rem;
     width: 100%;
@@ -61,7 +62,7 @@
 }
 .info-sub-body li {
     color: var(--text-muted);
-    font-size: 1.0625rem;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.6;
     padding-bottom: 0.375rem;
