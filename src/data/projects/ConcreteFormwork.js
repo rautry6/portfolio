@@ -14,14 +14,9 @@ const ConcreteFormwork = {
     title: 'Concrete Formwork Simulator',
     projTagline: 'Unity 3D Educational Game',
     projDescription:
-        'Concrete Formwork Simulator is a serious educational game a team and I designed for a professor \n ' +
-        'as part of a class project. The game is designed to teach students how to estimate the amount of supplies they need \n' +
-        'to make each formwork, estimate the correct cut sizes and amounts for each piece, and test their knowledge on the ' +
-        'correct build order of each formwork. The game is not designed as a way to learn these skills but to practice what \n' +
-        'is being taught in class and the professor provides other materials for them to use as well. ' +
-        'One other teamate and me were on the coding side of the project and we developed the Wall and Column formworks, fixed bugs ' +
-        'with the existing product, greatly improved the building system, and added a few extra elements like SFX and explosions.' +
-        'A playable version can be found on my friends itch.io page, ironlionm4n. (https://ironlionm4n.itch.io/cgdd4303-concrete-formwork-simulator)',
+        'Concrete Formwork Simulator is a serious educational game built for a professor to help students practise estimating materials, cut sizes, and build order for concrete formwork. ' +
+        'It supplements classroom instruction rather than replacing it. ' +
+        'As one of two programmers I added the Wall and Column formworks, overhauled the building system, fixed existing bugs, and added SFX and explosion effects.',
     imgUrl: ConcreteBuilding1,
     buttonLink: 'https://ironlionm4n.itch.io/cgdd4303-concrete-formwork-simulator',
     projectInfo: [
@@ -52,16 +47,16 @@ const ConcreteFormwork = {
                     headerName: 'Wall and Column Formworks',
                     videos: [Wall1, Column1],
                     textBlurb: [
-                        'Our main assignment for this project was to add a wall and column formwork option to the game. The player would have to do the same things they did with the existing slab formwork, buying materials, cutting, and assembling the formwork in the correct order.',
-                        'The wall formwork was the first formwork we added to the game. It added in two new materials the player needed to by, a metal tie and an angled strut. The strut needed to be able to cut as well since it was a 4 x 20 piece of plywood. This formwork also added in a new way of building as the slab was built from the gound up while the wall had the player placing layers infront and behind each other which the build system was not built to handle well. We had to make a lot of changes to the build system to make it work with the wall formwork but it made the column formwork much easier to implement after.',
-                        'The column formwork also added in a new material, a metal clamp that went around the central column. The clamp did not need to be cut and was just placed on the column after the player had built the formwork.',
+                        'Our primary task was adding wall and column formworks, each requiring the same buy-cut-assemble loop as the existing slab.',
+                        'The wall formwork introduced two new materials (metal tie and cuttable angled strut) and a layered front-and-back build order the existing system couldn\'t handle — requiring significant build system changes that also made the column much easier to add afterward.',
+                        'The column added a metal clamp placed after assembly, with no cutting required.',
                     ],
                 },
                 {
                     headerName: 'Building System',
                     videos: [Building1],
                     textBlurb: [
-                        'The original building system was clunky and it was very difficult to get the pieces to snap where you wanted them sometimes. To fix this we decreased the snap distance so the player had to be more precise but it kept the pieces from snapping to the other points around where the player was trying to place them. We also added in a system where the player could rotate the piece they were placing to make it easier to place the pieces in the correct orientation. This also helped with the wall formwork as we simply could change the rotation axis to allow the pieces to be in the correct orientation. The final upgrade we did was to make the a free cam so the player could control exactly how they were looking at the formwork.',
+                        'We tightened the snap distance to prevent pieces from snapping to unintended nearby points, added piece rotation to support correct orientation (also enabling the wall formwork\'s layered placement), and added a free camera so players can view the formwork from any angle.',
                     ],
                 },
             ],
@@ -73,7 +68,7 @@ const ConcreteFormwork = {
                     headerName: 'Polish and Juice',
                     videos: [Explosion1],
                     textBlurb: [
-                        'Towards the end of the project, we wanted to add some life into the game for the students to enjoy when they were playing. We added in some SFX for when the player bought materials, cut materials, and placed materials as well as when the playe was waiting for their score to be calculated. We also added in an explosion effect for when the player failed to build the formwork in correct order that would send the pieces flying everywhere. Each formwork also got its own music track as well. ',
+                        'Added SFX for buying, cutting, and placing materials, a score-calculation wait sound, per-formwork music tracks, and an explosion that sends pieces flying when the player builds in the wrong order.',
                     ],
                 },
             ],
@@ -85,7 +80,7 @@ const ConcreteFormwork = {
                     headerName: 'Score Calculation',
                     videos: [],
                     textBlurb: [
-                        'The client wanted the player to penalized for having repeat visits to the shop and for being wasteful with their materials. The original system was not working correctly and was not penalizing the player at all. We were able to go and track down the cause of the problem to be issues with the calculations and rounding too early and were able to fix the problem and get the scoring to work how our client wanted.',
+                        'The client required penalties for repeat shop visits and material waste, but the original scoring was not applying them. We tracked the issue to premature rounding in the calculations and fixed it to match the client\'s spec.',
                     ],
                 },
             ],

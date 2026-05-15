@@ -11,13 +11,10 @@ const IllusionOfWeight = {
     title: 'The Illusion of Weight',
     projTagline: 'Unity 3D VR Project',
     projDescription:
-        'The Illusion of Weight is a VR Research project I helped develop to test if using visual stimuli, \n ' +
-        'dumbells in a virtual gym, and taactile feedback, bHaptic tact gloves, we could make the player think that \n' +
-        'objects in the VR environment had different weights. The project was developed on the Meta Quest 2 and 3 and uses ' +
-        "bHapatic's tact gloves to emulate this 'weight' through vibrations that change depending on the dumbells weight \n" +
-        'and on if the player is raising or lowering the dumbells. ' +
-        'The goal of the project is to be used in a study to see if VR and haptic feedback can be used to help the elderly ' +
-        "stay active and exercise. The Illusion of Weight placed top 3 in Kennesaw State's Fall 2023 Computational Showcase Competition.",
+        'The Illusion of Weight is a VR research project on the Meta Quest 2 and 3 that tests whether visual stimuli and bHaptic tact glove vibrations can make virtual objects feel like they have different weights. ' +
+        'Vibration patterns change based on the dumbbell\'s weight and whether the player is lifting or lowering it. ' +
+        'The project is intended for a study on using VR and haptic feedback to encourage elderly users to exercise. ' +
+        "Placed top 3 in KSU's Fall 2023 Computational Showcase.",
     imgUrl: WeightBackground,
     projectInfo: [
         {
@@ -45,8 +42,7 @@ const IllusionOfWeight = {
                     headerName: 'Dumbell Interactions',
                     videos: [Dumbell1],
                     textBlurb: [
-                        'The dumbell interactions were the main focus of the project. My mentor wanted me to create an illusion of weight for the player by using the bHaptic tact gloves vibrations to make the player think the dumbells had different weights.',
-                        'There are three different dumbells weights: light, medium, and heavy. The light dumbell has the weakest vibrations and the heavy dumbell has the strongest vibrations. The vibrations also change depending on if the player is raising or lowering the dumbells to better match up with muscle use. ',
+                        'Three dumbbell weights (light, medium, heavy) each produce different vibration intensities through the bHaptic gloves. Vibrations also shift based on whether the player is lifting or lowering to better reflect real muscle use.',
                     ],
                 },
                 {
@@ -60,8 +56,7 @@ const IllusionOfWeight = {
                     headerName: 'bHaptic Tact Gloves',
                     videos: [],
                     textBlurb: [
-                        'The bHaptic tact gloves were used to provide the haptic feedback to the player. The gloves have six different vibrations points on each hand, one for each finger and one for the wrist. I designed each individual vibration pattern for the different dumbells and stressballs using bHaptics software and then published them to the Unity project. The gloves can then be paired to the headset and the vibrations will be sent to the gloves when the player interacts with the dumbells or stressballs.',
-                        'This was my first time getting to mess around with this kind of technology and it was very interesting to get to play around with and develop with. ',
+                        'The gloves have six vibration points per hand (one per finger, one at the wrist). I authored each vibration pattern for the dumbells and stressballs in bHaptics Studio, published them to the Unity project, and paired them to the headset — triggering the correct pattern whenever the player interacts with an object.',
                     ],
                 },
             ],

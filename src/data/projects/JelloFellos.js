@@ -12,14 +12,9 @@ const JelloFellos = {
     title: 'Jello Fellos',
     projTagline: 'Unity Mobile Game',
     projDescription:
-        'Jellow Fellos is a Mobile Game developed in Unity as part of team for a class.  \n ' +
-        "The player gets to customize their slime and is tasked with keeping it alive by not letting it's food or fun  \n" +
-        'bars reach 0. The player achieves this by playing minigames with the slime to win food to feed their slime. ' +
-        'There are 3 minigames, Slime Plinko, player drops the slime down a plinko board to gain a random prize, \n' +
-        'Slime Hole, the player plays Corn Hole with their slime as the bean bag, and Slime Ball, the player plays ' +
-        'Ski Ball with their slime as the ball. I developed the Slime Ball and Plink minigames, the prize inventory, the ' +
-        'system for giving prizes, and the AR functionality. ' +
-        'A playable version of Get Me Out can be found of my friends itch.io page, Noah Schultz (https://noahschultz.itch.io/jello-fellos)',
+        'Jello Fellos is a Unity mobile game where players customise and care for a slime by keeping its food and fun bars from hitting zero. ' +
+        'Three minigames earn rewards: Slime Plinko (drop slime down a plinko board), Slime Hole (cornhole with the slime as the bag), and Slime Ball (ski ball with the slime as the ball). ' +
+        'I built the Slime Ball and Slime Plinko minigames, the prize inventory, prize-giving system, and AR functionality.',
     imgUrl: jfMenu,
     imageList: [
         {

@@ -5,13 +5,10 @@ const GetMeOut = {
     title: 'Get Me Out',
     projTagline: 'Unity 2D Platformer',
     projDescription:
-        'Get Me Out is a 2D Platfomer made in Unity in which the player plays as a Rabbit in an animal \n ' +
-        'testing facility trying to escape after an accident in the lab. The player has to traverse through the facility,  \n' +
-        'collecting key cards and gaining power ups through testing machines to allow them to go through new routes and make it ' +
-        'to the final boss which is blocking their escape. I developed the boss AI, boss platforming section, grapple hook, \n' +
-        'power up system, health system, frog enemy AI, rat enemy AI, and hooked up the animations for the corrupted enemy ' +
-        'variants. The game was developed as part of a team for my Senior project at KSU. ' +
-        'A playable version of Get Me Out can be found of my friends itch.io page, ironlionm4n (https://ironlionm4n.itch.io/gmo)',
+        'Get Me Out is a 2D Unity platformer where a rabbit escapes an animal testing facility after a lab accident. ' +
+        'Players collect key cards and gain power-ups from testing machines to unlock new routes and reach the final boss. ' +
+        'I built the boss AI and platforming section, grapple hook, power-up system, health system, frog and rat enemy AI, and animated the corrupted enemy variants. ' +
+        'Developed as my Senior project at KSU.',
     imgUrl: GMOStart,
     buttonLink: 'https://ironlionm4n.itch.io/gmo',
     imageList: [

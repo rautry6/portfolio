@@ -26,14 +26,11 @@ const Chiba = {
     title: 'Chiba',
     projTagline: 'Unity 2D Puzzle Game',
     projDescription:
-        'Chiba is a 2D Puzzle Game similar to Sokoban developed with the Unity Game Engine. The player \n ' +
-        'pushes pieces of food to cut them down to the correct cut levels before placing them on plates to complete the levels. \n' +
-        'Some items roll until they hit something, sometimes the player has to use grill tiles to cook certian foods while avoiding ' +
-        'burning other, and there also placeable pieces of syrup and butter to change how the player interacts with foods. \n' +
-        'I developed the cutting mechanic, implemented the UI, developed the level select system, developed the level editor, ' +
-        'developed rolling foods, assited in the grill tile feature development, and developed the syrup and butter mechanics. ' +
-        "Chiba won Kennesaw State's Spring 2023 Computational Showcase Day and " +
-        'a playable version can be found on my friends itch.io page, ironlionm4n. (https://ironlionm4n.itch.io/chiba)',
+        'Chiba is a Sokoban-style 2D puzzle game built in Unity. Players push food across a grid, ' +
+        'cutting it to the correct size before placing it on plates to complete each level. ' +
+        'Mechanics include rolling foods, grill tiles, and placeable butter and syrup that add complexity as the game progresses. ' +
+        "I built the cutting mechanic, rolling foods, level select, level editor, butter/syrup mechanics, and the in-level UI. " +
+        "Chiba won KSU's Spring 2023 Computational Showcase.",
     imgUrl: ChibaMenu,
     buttonLink: 'https://store.steampowered.com/app/3660440/Chiba/',
     projectInfo: [
@@ -70,41 +67,41 @@ const Chiba = {
                     headerName: 'Cutting',
                     videos: [Cutting1],
                     textBlurb: [
-                        'Cutting is the central mechanic for the game. The player has to push the food pieces around the level to cut them down to the correct size. Each food has different number of times the player has to move them to cut them down a level, and the number of levels each item needs to cut down varies between levels. ',
-                        'The player can only cut food when they move it a space and the target stage is indicated by UI on the left side of the screen. The player has to put all the food from the UI on the plates at their target cut stage to complete the level, so the player has to think carefully to not overcut and lose or undercut and not be able to complete the level.',
+                        'The core mechanic — each food item has a cut level that decreases each time it is moved into a wall. The player must reach the target cut level shown in the side UI, then place the food on the correct plate to complete the level.',
+                        'Overcutting destroys the food and undercutting leaves the level unsolvable, so careful planning is required.',
                     ],
                 },
                 {
                     headerName: 'Rolling Foods',
                     videos: [Rolling1],
                     textBlurb: [
-                        'Rolling foods first appear in World 2 as meatballs and introduce a new movement mechanic to the player. Once the player pushes the meatball it will continue to move in that direction until it hits a wall, another piece of food, or syrup.',
-                        'If the player is not careful they can push the meatballs into corners where they can not be moved out of. Sometimes the player will have to use other food items to act as temporary walls for the meatballs to hit and change direction. ',
+                        'Introduced in World 2 as meatballs — once pushed, they slide until hitting a wall, another food, or syrup.',
+                        'Players must plan carefully to avoid trapping them in corners, and can use other food items as temporary walls to redirect them.',
                     ],
                 },
                 {
                     headerName: 'Grilling',
                     videos: [Grilling1, Grilling2],
                     textBlurb: [
-                        'Grill tiles are introduced to the player starting in World 3. The tiles turn on and off in a cycle every couple of seconds. The player can push certain foods, meats, onto the grill tiles to cook them. Once the meat is cooked the player can then push them off and cut them like normal, or roll them if it is a meatball, to complete the level. ',
-                        "The player has to be careful though as the meat can burn if they don't take it off the grill before it turns back on. The grill also instanly disentigrates any non-meant items that are on top of them when they turn on. ",
+                        'Introduced in World 3 — grill tiles cycle on and off every few seconds. Meat must be pushed onto them to cook before it can be cut and plated.',
+                        'Leaving meat on when the grill turns back on burns it, and any non-meat item caught on an active grill tile is instantly destroyed.',
                     ],
                 },
                 {
                     headerName: 'Butter and Syrup',
                     videos: [Butter1, Butter2, Syrup1],
                     textBlurb: [
-                        'Butter and Syrup are introduced to the player in World 4 and are the final mechanics in the game. Butter and Syrup are placeable items that the player can place and pick up and move at will. They affect the movement of food items in different ways. ',
-                        'Butter affects all non-rolling food items and makes them slide an extra tile without being cut more than once. The player can create a chain of butter to move food items even further for only one cut.',
-                        'Syrup affects rolling food items and allows the player to stop them from rolling on the tile the syrup is placed on. The rolling food can then be pushed off like normal but it gives the player the ability to stop the rolling foods without having to rely on other food items being nearby to stop them.',
+                        'World 4 introduces butter and syrup — both are placeable tiles the player can freely pick up and reposition.',
+                        'Butter causes non-rolling food to slide an extra tile for only one cut, and can be chained for longer slides.',
+                        'Syrup stops rolling food on the tile it is placed on, giving the player precise control over meatball movement without needing nearby walls.',
                     ],
                 },
                 {
                     headerName: 'Undo',
                     videos: [Undo1],
                     textBlurb: [
-                        'The Undo system was added to the game to make it so the player did not have to restart the level if they made a small mistake. The player can undo their last three moves, and a move is defined as pushing (or rolling) a food item. The entire board state is taken back to the state it was in before the player made the move, which means cut level, position, and grilled status are all reverted. ',
-                        'We also made it so the player can undo from the game over screen so they can quickly try again if they made a mistake at the end of the level. This was added after seeing playtesters reactions when they made a mistake at the end of the level and had to restart the entire level, especially on some of the longer levels.',
+                        'Players can undo their last three moves — each undo fully restores board state including cut level, position, and grilled status.',
+                        'Undo is also available from the game over screen, added after playtesters expressed frustration at having to restart long levels over a single late mistake.',
                     ],
                 },
             ],
@@ -116,25 +113,25 @@ const Chiba = {
                     headerName: 'Level Select',
                     videos: [LevelSelect1],
                     textBlurb: [
-                        'Since the game has different worlds based on different countries, we wanted to have a more interactive level select system than just a list of levels. We decided to go with a Mario World style map where the player can move around the map and select the levels they want to play. They can control which world they are in by using the buttons to the left of the map and can walk along the path to the level they want to play.',
+                        'A Mario World-style map lets players walk along a path and select levels, with world buttons on the side to switch between the game\'s country-themed worlds.',
                     ],
                 },
                 {
                     headerName: 'Level Editor',
                     videos: [LevelEditor1],
                     textBlurb: [
-                        'The level editor was a challenge given to us by our professor for the project. We had to create a level editor that could be used to build your own levels and then play them. The editor had to be easy to use and needed to have all the features in the game at the time. The current editor has up to the roling foods and allows the player to place down food, the player character, plates, and walls. The player can then play the level and test it to see if it is completable. ',
-                        'Each food item also has settings that the player can change by right clicking them. This opens up some UI that the player can use to change the target cut level and if the food is needed to complete the level.',
+                        'A built-in editor lets players place food, the player character, plates, and walls, then immediately playtest the level.',
+                        'Right-clicking a food item opens settings to configure its target cut level and whether it is required to complete the level.',
                     ],
                 },
                 {
                     headerName: 'UI Design',
                     videos: [Cutting1],
                     textBlurb: [
-                        'The UI on the side of each level went through multiple iterations before we settled on the final design. ',
-                        'Initially the UI just showed the player the target cut level of each food. Players had issue with this design as they did not know how many cut levels each food had or what they looked like so they were unsure how many times they had to push each food without doing trial and error.',
-                        'We then changed the UI to show each cut phase of the foods with the target cut level being the final one. This allowed the player to see exactly how many cut levels they needed to go through and what the food like at each stage. This change was well received by playtesters but some still had issues with not fully understanding what the target cut level was.',
-                        'To combat this we added a plate under the target cut level UI. This way the players could see exactly what they were supposed to put on each plate. This change was very well received and is the final design we went with.',
+                        'The side UI went through three iterations based on playtester feedback.',
+                        'The first version showed only the target cut level — playtesters did not know how many cuts remained or what each stage looked like.',
+                        'The second version showed all cut phases in sequence, which clarified progression but left some players unsure which phase was the goal.',
+                        'The final version added a plate icon beneath the target stage, making the objective immediately clear.',
                     ],
                 },
             ],
