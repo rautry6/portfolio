@@ -3,17 +3,21 @@ import csharp from '../assets/img/csharp-icon.png'
 import unity from '../assets/img/unity-icon.png'
 import gamedesign from '../assets/img/game-design.png'
 import uiux from '../assets/img/uiuxicon.png'
-import word from '../assets/img/word-icon.png'
-import excel from '../assets/img/excel-icon.png'
-import powerpoint from '../assets/img/powerpoint-icon.png'
+import css from '../assets/img/CSS.png'
+import Javascript from '../assets/img/Javascript.jpg'
+import Typescript from '../assets/img/Typescript.png'
 
-export const skillsData = [
-    { icon: reactIcon, label: 'React/React Native' },
+export const gameDevSkills = [
     { icon: unity, label: 'Unity Game Engine' },
     { icon: csharp, label: 'C#' },
     { icon: gamedesign, label: 'Game Design' },
     { icon: uiux, label: 'UI/UX Design' },
-    // { icon: word,       label: "Word Certified" },
-    // { icon: excel,      label: "Excel Certified" },
-    // { icon: powerpoint, label: "PowerPoint Certified" },
+]
+
+export const frontEndSkills = [
+    { icon: reactIcon, label: 'React/React Native' },
+    { icon: uiux, label: 'UI/UX Design' },
+    { icon: Typescript, label: 'Typescript' },
+    { icon: Javascript, label: 'Javascript' },
+    { icon: css, label: 'CSS' },
 ]
