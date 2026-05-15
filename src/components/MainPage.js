@@ -1,3 +1,4 @@
+import './MainPage.css'
 import { NavBar } from './Navbar/NavBar'
 import { Banner } from './Banner'
 import { Skills } from './Skills'
@@ -7,7 +8,7 @@ import { Footer } from './Footer'
 
 export const MainPage = () => {
     return (
-        <div className="App">
+        <div className="main-page">
             <NavBar />
             <Banner />
             <Skills />

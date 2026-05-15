@@ -11,10 +11,14 @@ export const Contact = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col size={12} md={6}>
-                        <TrackVisibility>
+                        <TrackVisibility once offset={400}>
                             {({ isVisible }) => (
                                 <img
-                                    className={isVisible ? 'animate__animated animate__zoomIn' : ''}
+                                    className={
+                                        isVisible
+                                            ? 'animate__animated animate__zoomIn'
+                                            : 'scroll-hidden'
+                                    }
                                     src={contactImg}
                                     alt="Contact Us"
                                 />
@@ -22,10 +26,14 @@ export const Contact = () => {
                         </TrackVisibility>
                     </Col>
                     <Col size={12} md={6}>
-                        <TrackVisibility>
+                        <TrackVisibility once offset={400}>
                             {({ isVisible }) => (
                                 <div
-                                    className={isVisible ? 'animate__animated animate__fadeIn' : ''}
+                                    className={
+                                        isVisible
+                                            ? 'animate__animated animate__fadeIn'
+                                            : 'scroll-hidden'
+                                    }
                                 >
                                     <h2>Get In Touch</h2>
                                     <h3>Reach out to me via email</h3>

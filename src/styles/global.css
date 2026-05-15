@@ -122,3 +122,8 @@ p.success {
 p.danger {
     color: red;
 }
+
+/* Elements waiting to animate in — stays invisible until TrackVisibility fires */
+.scroll-hidden {
+    opacity: 0;
+}

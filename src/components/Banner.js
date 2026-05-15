@@ -59,10 +59,14 @@ export const Banner = () => {
             <Container>
                 <Row className="aligh-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <TrackVisibility>
+                        <TrackVisibility once offset={400}>
                             {({ isVisible }) => (
                                 <div
-                                    className={isVisible ? 'animate__animated animate__fadeIn' : ''}
+                                    className={
+                                        isVisible
+                                            ? 'animate__animated animate__fadeIn'
+                                            : 'scroll-hidden'
+                                    }
                                 >
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <h1>
@@ -86,10 +90,14 @@ export const Banner = () => {
                         </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <TrackVisibility>
+                        <TrackVisibility once offset={400}>
                             {({ isVisible }) => (
                                 <div
-                                    className={isVisible ? 'animate__animated animate__zoomIn' : ''}
+                                    className={
+                                        isVisible
+                                            ? 'animate__animated animate__zoomIn'
+                                            : 'scroll-hidden'
+                                    }
                                 >
                                     <img src={headerImg} alt="Header Img" />
                                 </div>

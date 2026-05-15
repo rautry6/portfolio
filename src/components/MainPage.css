@@ -1,0 +1,13 @@
+.main-page {
+  background-image: url('../assets/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Sections that had opaque backgrounds must be transparent so the starfield shows through */
+.main-page .project {
+  background-color: transparent;
+}

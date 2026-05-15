@@ -12,10 +12,14 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col size={12}>
-                        <TrackVisibility>
+                        <TrackVisibility once offset={400}>
                             {({ isVisible }) => (
                                 <div
-                                    className={isVisible ? 'animate__animated animate__fadeIn' : ''}
+                                    className={
+                                        isVisible
+                                            ? 'animate__animated animate__fadeIn'
+                                            : 'scroll-hidden'
+                                    }
                                 >
                                     <h2>Projects</h2>
                                     <p>Click on each icon for more details</p>
@@ -37,7 +41,7 @@ export const Projects = () => {
                                             className={
                                                 isVisible
                                                     ? 'animate__animated animate__slideInUp'
-                                                    : ''
+                                                    : 'scroll-hidden'
                                             }
                                         >
                                             <Tab.Pane eventKey="first">
