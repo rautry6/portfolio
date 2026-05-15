@@ -35,7 +35,7 @@ const Chiba = {
         "Chiba won Kennesaw State's Spring 2023 Computational Showcase Day and " +
         'a playable version can be found on my friends itch.io page, ironlionm4n. (https://ironlionm4n.itch.io/chiba)',
     imgUrl: ChibaMenu,
-    buttonLink: 'https://ironlionm4n.itch.io/chiba',
+    buttonLink: 'https://store.steampowered.com/app/3660440/Chiba/',
     projectInfo: [
         {
             headerName: 'Responsibilities',

@@ -25,10 +25,10 @@ import EmployeePolls from './projects/EmployeePolls'
 import MyReads from './projects/MyReads'
 
 export const gameProjects = [
-    CorporationInc,
-    IdleDino,
-    CoinKnight,
     Chiba,
+    CorporationInc,
+    CoinKnight,
+    IdleDino,
     ConcreteFormwork,
     IllusionOfWeight,
     GetMeOut,
