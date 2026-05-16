@@ -7,7 +7,11 @@ import {
     ConcreteMenu,
     ConcreteResults,
 } from '../../assets/img/Projects/ConcreteFormwork'
-import { Building1, Column1, Wall1, Explosion1 } from '../../assets/vid/Projects/Concrete'
+const _v = `${process.env.PUBLIC_URL}/assets/vid/Projects/Concrete`
+const Building1 = `${_v}/Building_1.mp4`
+const Column1 = `${_v}/Column_1.mp4`
+const Wall1 = `${_v}/Wall_1.mp4`
+const Explosion1 = `${_v}/Explosion_1.mp4`
 
 /** @type {import('../projectDataShape').ProjectData} */
 const ConcreteFormwork = {

@@ -5,14 +5,13 @@ import {
     CorpGameplay,
     CorpMenu,
 } from '../../assets/img/Projects/Corporation Inc'
-import {
-    Cutscene,
-    Dialogue1,
-    Dialogue2,
-    Expressions,
-    Resume1,
-    Resume2,
-} from '../../assets/vid/Projects/CorpInc'
+const _v = `${process.env.PUBLIC_URL}/assets/vid/Projects/CorpInc`
+const Cutscene = `${_v}/Cutscene.mp4`
+const Dialogue1 = `${_v}/Dialogue_1.mp4`
+const Dialogue2 = `${_v}/Dialogue_2.mp4`
+const Expressions = `${_v}/Expressions.mp4`
+const Resume1 = `${_v}/Resume_1.mp4`
+const Resume2 = `${_v}/Resume_2.mp4`
 
 /** @type {import('../projectDataShape').ProjectData} */
 const CorporationInc = {

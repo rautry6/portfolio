@@ -4,7 +4,9 @@ import {
     WeightDumbell,
     WeightStressball,
 } from '../../assets/img/Projects/Illusion of Weight'
-import { Dumbell1, Stressball1 } from '../../assets/vid/Projects/Weight'
+const _v = `${process.env.PUBLIC_URL}/assets/vid/Projects/Weight`
+const Dumbell1 = `${_v}/Dumbells_1.mp4`
+const Stressball1 = `${_v}/Stressball_1.mp4`
 
 /** @type {import('../projectDataShape').ProjectData} */
 const IllusionOfWeight = {

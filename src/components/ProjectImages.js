@@ -3,6 +3,8 @@ import './Projects.css'
 import { ImageCard } from './ImageCard'
 
 export const ProjectImages = ({ images }) => {
+    if (images?.length == 0) return <view></view>
+
     return (
         <section className="project" id="images" style={{ overflow: 'hidden' }}>
             <Container>

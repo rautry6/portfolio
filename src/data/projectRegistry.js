@@ -20,6 +20,7 @@ import ConcreteFormwork from './projects/ConcreteFormwork'
 import IllusionOfWeight from './projects/IllusionOfWeight'
 import GetMeOut from './projects/GetMeOut'
 import JelloFellos from './projects/JelloFellos'
+import MagLabs from './projects/MagLabs'
 import CitizenTracker from './projects/CitizenTracker'
 import EmployeePolls from './projects/EmployeePolls'
 import MyReads from './projects/MyReads'
@@ -28,6 +29,7 @@ export const gameProjects = [
     Chiba,
     CorporationInc,
     CoinKnight,
+    MagLabs,
     IdleDino,
     ConcreteFormwork,
     IllusionOfWeight,

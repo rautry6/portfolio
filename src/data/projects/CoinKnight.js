@@ -1,22 +1,22 @@
 import coinKnight from '../../assets/img/Projects/coinknightmenu.png'
 import { Platformer1, Platformer2, Boss1, Boss2, Death } from '../../assets/img/Projects/CoinKnight'
-import {
-    FSPhase1,
-    FSPhase2,
-    FSPhase3,
-    MPhase1,
-    MPhase2,
-    MPhase3,
-    GClap,
-    GPhase1,
-    GPhase2,
-    Dash1,
-    Grapple1,
-    Grapple2,
-    NPC1,
-    Coin1,
-    Coin2,
-} from '../../assets/vid/Projects/CoinKnight'
+
+const _v = `${process.env.PUBLIC_URL}/assets/vid/Projects/CoinKnight`
+const FSPhase1 = `${_v}/Flame_Skull_Phase_1.mp4`
+const FSPhase2 = `${_v}/Flame_Skull_Phase_2.mp4`
+const FSPhase3 = `${_v}/Flame_Skull_Phase_3.mp4`
+const MPhase1 = `${_v}/Mage_Phase_1.mp4`
+const MPhase2 = `${_v}/Mage_Phase_2.mp4`
+const MPhase3 = `${_v}/Mage_Phase_3.mp4`
+const GClap = `${_v}/Golem_Clap.mp4`
+const GPhase1 = `${_v}/Golem_Phase_1.mp4`
+const GPhase2 = `${_v}/Golem_Phase_2.mp4`
+const Dash1 = `${_v}/Dash_1.mp4`
+const Grapple1 = `${_v}/Grapple_1.mp4`
+const Grapple2 = `${_v}/Grapple_2.mp4`
+const NPC1 = `${_v}/NPC_1.mp4`
+const Coin1 = `${_v}/Coin_1.mp4`
+const Coin2 = `${_v}/Coin_2.mp4`
 
 /** @type {import('../projectDataShape').ProjectData} */
 const CoinKnight = {

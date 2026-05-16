@@ -8,18 +8,17 @@ import {
     ChibaMenu,
     ChibaTutorial,
 } from '../../assets/img/Projects/Chiba'
-import {
-    LevelEditor1,
-    LevelSelect1,
-    Cutting1,
-    Rolling1,
-    Grilling1,
-    Grilling2,
-    Butter1,
-    Butter2,
-    Syrup1,
-    Undo1,
-} from '../../assets/vid/Projects/Chiba'
+const _v = `${process.env.PUBLIC_URL}/assets/vid/Projects/Chiba`
+const LevelEditor1 = `${_v}/LevelEditor.mp4`
+const LevelSelect1 = `${_v}/LevelSelect.mp4`
+const Cutting1 = `${_v}/Cutting_1.mp4`
+const Rolling1 = `${_v}/Rolling_1.mp4`
+const Grilling1 = `${_v}/Grilling_1.mp4`
+const Grilling2 = `${_v}/Grilling_2.mp4`
+const Butter1 = `${_v}/Butter_1.mp4`
+const Butter2 = `${_v}/Butter_2.mp4`
+const Syrup1 = `${_v}/Syrup_1.mp4`
+const Undo1 = `${_v}/Undo_1.mp4`
 
 /** @type {import('../projectDataShape').ProjectData} */
 const Chiba = {

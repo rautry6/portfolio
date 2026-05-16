@@ -1,15 +1,14 @@
 import { Idle, Dino1, Dino2, Dino3 } from '../../assets/img/Projects/IdleDino'
-import {
-    Dracorex,
-    IdleSystems,
-    Volcano,
-    Pteradon,
-    Flying,
-    Aging,
-    Asteroid,
-    Rings,
-    Viewing,
-} from '../../assets/vid/Projects/Idle Dino'
+const _v = `${process.env.PUBLIC_URL}/assets/vid/Projects/Idle Dino`
+const Dracorex = `${_v}/Dracorex.mp4`
+const IdleSystems = `${_v}/Idle_Systems.mp4`
+const Volcano = `${_v}/Volcano.mp4`
+const Pteradon = `${_v}/Pteradon.mp4`
+const Flying = `${_v}/Flying.mp4`
+const Aging = `${_v}/Aging.mp4`
+const Asteroid = `${_v}/Asteroid.mp4`
+const Rings = `${_v}/Rings.mp4`
+const Viewing = `${_v}/Viewing.mp4`
 
 /** @type {import('../projectDataShape').ProjectData} */
 const IdleDino = {
